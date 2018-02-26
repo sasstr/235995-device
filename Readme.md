@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Alexander Strakhovenko](https://up.htmlacademy.ru/htmlcss/20/user/235995).
-* Наставник: `Неизвестно`.
+* Наставник: Денис Байдаров.
 
 ---
 
