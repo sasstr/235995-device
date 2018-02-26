@@ -1,0 +1,24 @@
+/*
+1 Позиционирование
+2 Блочная модель
+3 Типографика
+4 Оформление
+5 Анимация
+6 Разное
+*/
+
+/*     4 Оформление     */
+.logo {
+    font: 48px "Gilroy ExtraBold", Arial, sans-serif;
+    color: #000000;
+    text-transform: uppercase;
+  }
+
+  .logo:hover {
+    color: #464646;
+  }
+ 
+  .logo:active { 
+    color: #666666;
+   }
+
