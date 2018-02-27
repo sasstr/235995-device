@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Alexander Strakhovenko](https://up.htmlacademy.ru/htmlcss/20/user/235995).
-* Наставник: Денис Байдаров.
+* Наставник: [Денис Байдаров] (https://htmlacademy.ru/profile/4er).
 
 ---
 
