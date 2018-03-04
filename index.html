@@ -99,20 +99,20 @@
                     <a href="#">
                         <span class="btn-slider-more-info btn-decor-yellow">Подробнее</span>
                     </a>
-                    <div class="slider-items-data">
-                        <div class="slider-items-data-1">
-                            <span class="value">8,5 м</span>
-                            <span class="description">Длина палки</span>
-                        </div>
-                        <div class="slider-items-data-2">
-                            <span class="value">5 кг</span>
-                            <span class="description">Вес палки</span>
-                        </div>
-                        <div class="slider-items-data-3">
-                            <span class="value">Карбон</span>
-                            <span class="description">Материал</span>
-                        </div>
-                    </div>
+                    <table class="slider-items-data">
+                        <tr class="slider-item-data-column">
+                            <td class="value">8,5 м</td>
+                            <td class="description">Длина палки</td>
+                        </tr>
+                        <tr class="slider-item-data-column">
+                            <td class="value">5 кг</td>
+                            <td class="description">Вес палки</td>
+                        </tr>
+                        <tr class="slider-item-data-column">
+                            <td class="value">Карбон</td>
+                            <td class="description">Материал</td>
+                        </tr>
+                    </table>
                 </div>
                 <div class="slider-item slider-item-2 visually-hidden">
                     <div class="slider-item-img img-2"><!-- Сюда при стилизации фоном картинку добавим--></div>
@@ -124,12 +124,12 @@
                     <a href="#">
                         <span class="btn-slider-more-info  btn-decor-yellow">Подробнее</span>
                     </a>
-                    <div class="slider-items-data">
-                        <div class="slider-items-data-1">
-                            <span class="value">48 часов</span>
-                            <span class="description">Без подзарядки</span>
-                        </div>
-                    </div>
+                    <table class="slider-items-data">
+                        <tr class="slider-item-data-column">
+                            <td class="value">48 часов</td>
+                            <td class="description">Без подзарядки</td>
+                        </tr>
+                    </table>
                 </div>
                 <div class="slider-item slider-item-3 visually-hidden">
                     <div class="slider-item-img img-3"><!-- Сюда при стилизации фоном картинку добавим--></div>
@@ -141,16 +141,16 @@
                        мощным лазером, замаскированным под стандартную камеру.
                     </p>
                     <a class="btn-slider-more-info btn-decor-yellow" href="#">Подробнее</a>
-                    <div class="slider-items-data">
-                        <div class="slider-items-data-1">
-                            <span class="value">800 м</span>
-                            <span class="description">Дальность полета</span>
-                        </div>
-                        <div class="slider-items-data-2">
-                            <span class="value">50 м</span>
-                            <span class="description">Радиус поражения</span>
-                        </div>
-                    </div>
+                    <table class="slider-items-data">
+                        <tr class="slider-item-data-column">
+                            <td class="value">800 м</td>
+                            <td class="description">Дальность полета</td>
+                        </tr>
+                        <tr class="slider-item-data-column">
+                            <td class="value">50 м</td>
+                            <td class="description">Радиус поражения</td>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </div>
@@ -184,33 +184,35 @@
         </div>
         <section class="services-data">
             <h2 class="visually-hidden">Услуги интернет магазина Device</h2>
-            <form action="get">
-                <input type="radio" id="service-1" name="toggle-service" checked >
-                <input type="radio" id="service-2" name="toggle-service" >
-                <input type="radio" id="service-3" name="toggle-service" >
-                <div class="services-data-controls">
-                    <label class="" for="service-1"></label>
-                    <label class="" for="service-2"></label>
-                    <label class="" for="service-3"></label>
-                </div>
-            </form>
+            <div class="service-data-controls">
+                <form action="get">
+                    <input type="radio" id="service-1" name="toggle-service" checked >
+                    <input type="radio" id="service-2" name="toggle-service" >
+                    <input type="radio" id="service-3" name="toggle-service" >
+                    <div class="services-data-controls">
+                        <label class="btn-decor-yellow" for="service-1">Доставка</label>
+                        <label class="btn-decor-yellow" for="service-2">Гарантия</label>
+                        <label class="btn-decor-yellow" for="service-3">Кредит</label>
+                    </div>
+                </form>
+            </div>
             <div class="services-data-features">
                 <article class="services-data-feature delivery">
-                    <h2 class="btn-decor-yellow">Доставка</h2>
+                    <h2 class="services-data-feature-headline">Доставка</h2>
                     <p>Мы с удовольствием доставим ваш товар прямо к вашему
                        подъезду совершенно бесплатно! Ведь мы неплохо
                        заработаем, поднимая его на ваш этаж.
                     </p>
                 </article>
                 <article class="services-data-feature warranty">
-                    <h2 class="btn-decor-yellow">Гарантия</h2>
+                    <h2 class="services-data-feature-headline">Гарантия</h2>
                     <p>Если из-за возгорания купленного у нас товара у вас сгорит
                        дом — не переживайте, мы выдадим вам новый.
                        Товар, не дом, конечно же.
                     </p>
                 </article>
                 <article class="services-data-feature credit">
-                    <h2 class="btn-decor-yellow">Кредит</h2>
+                    <h2 class="services-data-feature-headline">Кредит</h2>
                     <p>Залезть в долговую яму стало проще! Кредитные
                        консультанты подберут для вас наиболее выгодные
                        условия кредита. Выгодные для нашего банка, разумеется.
@@ -253,15 +255,15 @@
                   Мы можем доставить ваш товар в самые отдаленные точки
                    России! DEVICE работает со многими транспортными компаниями:
                 </p>
-                    <ul class="delivery-vendors">
-                        <li>
-                            <a class="delivery-vendor-link dellin" href="#">Деловые Линии</a>
+                <ul class="delivery-vendors">
+                    <li>
+                        <a class="delivery-vendor-link" href="#">Деловые Линии</a>
                         </li>
                     <li><!--Компания Автотрейдинг давно разорилась - её не существует! -->
-                        <a class="delivery-vendor-link autotrading" href="#">Автотрейдинг</a>
+                        <a class="delivery-vendor-link" href="#">Автотрейдинг</a>
                     </li>
                     <li>
-                        <a class="delivery-vendor-link jeldorexp" href="#">ЖелДорЭкспедиция</a>
+                        <a class="delivery-vendor-link" href="#">ЖелДорЭкспедиция</a>
                     </li>
                 </ul>
                 <div class="btn-about-us btn-decor-yellow">
