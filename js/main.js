@@ -21,12 +21,16 @@ formRadioButtonsSlider.onclick = function(){
 window.onload = function () {
   var len = sliders.length,
       i = len-1;
+
   (function go() {
     sliders[i].classList.add('visually-hidden');
+    radioButtonsSlider[i].checked = false;
+    i = ++i % len;
+
+    sliders[i].classList.remove('visually-hidden');
+
     radioButtonsSlider[i].checked = true;
-     i = ++i % len;
-     sliders[i].classList.remove('visually-hidden');
-     radioButtonsSlider[i].checked = false;
+
      window.setTimeout(go, 3000);
     })();
   }
