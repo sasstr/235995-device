@@ -7,18 +7,47 @@
 6 Разное
 */
 
-/*     4 Оформление     */
+                      /*    Общие стили для все страницы     */
+
 
 body {
   padding: 0;
   margin: 0;
 
 }
+/* Шапка  */
 
+
+                                 /* Слайдер  */
 .slider-item {
-width: 1160px;
-height: 550px;
+width: 1069px;
+height: 486px;
+
 }
+
+.slider-item-headline {
+  font-size: 47px;
+  margin-left: 600px;
+
+}
+
+.slider-item p {
+  font-size: 15px;
+  margin-left: 600px;
+
+}
+
+.slider-item a {
+  font-size: 18px;
+  margin-left: 600px;
+
+}
+
+.slider-item table {
+  margin-left: 600px;
+
+}
+
 
 
 .slider-item-1 {

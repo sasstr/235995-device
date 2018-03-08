@@ -28,7 +28,6 @@ window.onload = function () {
     i = ++i % len;
 
     sliders[i].classList.remove('visually-hidden');
-
     radioButtonsSlider[i].checked = true;
 
      window.setTimeout(go, 3000);
