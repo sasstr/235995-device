@@ -30,7 +30,6 @@ window.onload = function () {
      window.setTimeout(go, 3000);
     })();
   }
-}
 
 formRadioButtonsServises.onclick = function(){
   for (var i = 0; i < sliders.length ; i++) {
