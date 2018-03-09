@@ -13,9 +13,10 @@
                 <img src="img/logo.png" width="164" height="36" alt="Логотип интернет магазина Девайс">
             </a>
         <div class="main-nav-search">
-            <form action="https://htmlacademy.ru" method="get">
+            <form action="https://echo.htmlacademy.ru" method="post">
                 <input type="search" name="search" id="find" placeholder="Поиск по сайту">
-                <input type="submit" value="Найти">
+                <label class="visually-hidden" for="find">Поиск по сайту</label>
+                <input type="submit" value="Найти" >
             </form>
         </div>
             <ul class="main-nav-user-menu" >
@@ -80,13 +81,13 @@
     <main class="container">
         <h1 class="visually-hidden">Интернет-магазин "Device" это огромный выбор интересных девайсов</h1>
         <div class="slider">
-            <form action="https://echo.htmlacademy.ru" method="post">
+            <form class="slider-form-radio-btns" action="https://echo.htmlacademy.ru" method="post">
                 <input type="radio" id="slider-1" name="toggle" checked >
-                <input type="radio" id="slider-2" name="toggle" >
-                <input type="radio" id="slider-3" name="toggle" >
-                <label class="slider-toggle slider-1" for="slider-1"></label>
-                <label class="slider-toggle slider-2" for="slider-2"></label>
-                <label class="slider-toggle slider-3" for="slider-3"></label>
+                <input type="radio" id="slider-2" name="toggle" checked >
+                <input type="radio" id="slider-3" name="toggle" checked >
+                <label class="slider-toggle slider-1" for="slider-1" tabindex="0"></label>
+                <label class="slider-toggle slider-2" for="slider-2" tabindex="0"></label>
+                <label class="slider-toggle slider-3" for="slider-3" tabindex="0"></label>
             </form>
             <div class="slider-items">
                 <div class="slider-item slider-item-1">
@@ -102,15 +103,13 @@
                     <table class="slider-items-data">
                         <tr class="slider-item-data-column">
                             <td class="value">8,5 м</td>
-                            <td class="description">Длина палки</td>
-                        </tr>
-                        <tr class="slider-item-data-column">
                             <td class="value">5 кг</td>
-                            <td class="description">Вес палки</td>
-                        </tr>
-                        <tr class="slider-item-data-column">
                             <td class="value">Карбон</td>
-                            <td class="description">Материал</td>
+                            <tr>
+                                <td class="description">Длина палки</td>
+                                <td class="description">Вес палки</td>
+                                <td class="description">Материал</td>
+                            </tr>
                         </tr>
                     </table>
                 </div>
@@ -127,7 +126,9 @@
                     <table class="slider-items-data">
                         <tr class="slider-item-data-column">
                             <td class="value">48 часов</td>
-                            <td class="description">Без подзарядки</td>
+                            <tr>
+                                <td class="description">Без подзарядки</td>
+                            </tr>
                         </tr>
                     </table>
                 </div>
@@ -144,11 +145,11 @@
                     <table class="slider-items-data">
                         <tr class="slider-item-data-column">
                             <td class="value">800 м</td>
-                            <td class="description">Дальность полета</td>
-                        </tr>
-                        <tr class="slider-item-data-column">
                             <td class="value">50 м</td>
-                            <td class="description">Радиус поражения</td>
+                            <tr class="slider-item-data-column">
+                              <td class="description">Дальность полета</td>
+                              <td class="description">Радиус поражения</td>
+                            </tr>
                         </tr>
                     </table>
                 </div>
@@ -161,7 +162,7 @@
                     <span>Виртуальная реальность</span>
                 </li>
                 <li class="catalog-item item-2">
-                    <a class="catalog-item-link" href="#"></a>
+                    <a class="catalog-item-link" href="catalog.html"></a>
                     <span>Моноподы <br> для селфи</span>
                 </li>
                 <li class="catalog-item item-3">
@@ -185,14 +186,14 @@
         <section class="services-data">
             <h2 class="visually-hidden">Услуги интернет магазина Device</h2>
             <div class="service-data-controls">
-                <form action="https://echo.htmlacademy.ru" method="POST">
-                    <input type="radio" id="service-1" name="toggle-service" checked >
-                    <input type="radio" id="service-2" name="toggle-service" >
-                    <input type="radio" id="service-3" name="toggle-service" >
+                <form action="https://echo.htmlacademy.ru" method="get">
+                    <input type="radio" id="service-1" name="toggle-service" checked>
+                    <input type="radio" id="service-2" name="toggle-service">
+                    <input type="radio" id="service-3" name="toggle-service">
                     <div class="services-data-controls">
-                        <label class="btn-decor-yellow" for="service-1">Доставка</label>
-                        <label class="btn-decor-yellow" for="service-2">Гарантия</label>
-                        <label class="btn-decor-yellow" for="service-3">Кредит</label>
+                        <label class="btn-decor-yellow" for="service-1" tabindex="0">Доставка</label>
+                        <label class="btn-decor-yellow" for="service-2" tabindex="0">Гарантия</label>
+                        <label class="btn-decor-yellow" for="service-3" tabindex="0">Кредит</label>
                     </div>
                 </form>
             </div>
@@ -318,22 +319,22 @@
             <div class="main-footer-social">
                 <ul class="main-footer-social-list">
                   <li class="main-footer-social-item">
-                      <a class="main-footer-social-link fb" href="#">Фэйсбук</a>
+                      <a class="main-footer-social-link fb" href="#" aria-label="Фэйсбук">Фэйсбук</a>
                     </li>
                   <li class="main-footer-social-item">
-                      <a class="main-footer-social-link insta" href="#">Инстаграм</a>
+                      <a class="main-footer-social-link insta" href="#" aria-label="Инстаграм">Инстаграм</a>
                     </li>
                   <li class="main-footer-social-item">
-                      <a class="main-footer-social-link twitter" href="#">Твиттер</a>
+                      <a class="main-footer-social-link twitter" href="#" aria-label="Твиттер">Твиттер</a>
                   </li>
                 </ul>
             </div>
-            <a class="logo-html-academy" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+            <a class="logo-html-academy" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Логотип HTML Academy" >HTML Academy</a>
         </div>
     </footer>
         <div class="write-to-us pop-up-show visually-hidden">
-            <button class="pop-up-close " type="button" title="Закрыть">Закрыть</button>
-            <form action="https://htmlacademy.ru" method="post">
+            <button class="pop-up-close " type="button" title="Закрыть" aria-label="Закрыть">Закрыть</button>
+            <form action="https://echo.htmlacademy.ru" method="post">
                 <div class="write-to-us-form">
                     <div class="write-to-us-form-name">
                         <label for="pop-up-name">Ваше имя:</label>
@@ -348,11 +349,11 @@
                         <textarea id="pop-up-text" name="message" placeholder="В свободной форме" maxlength="500" required></textarea>
                     </div>
                 </div>
-                <button class="pop-up-submit" type="submit">Отправить</button>
+                <button class="pop-up-submit" type="submit" aria-label="Отправить форму обратной связи">Отправить</button>
             </form>
         </div>
         <div class="map-pop-up visually-hidden">
-            <button class="pop-up-close " type="button" title="Закрыть">Закрыть</button>
+            <button class="pop-up-close " type="button" title="Закрыть" aria-label="Закрыть">Закрыть</button>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779994!2d37.527429316223134!3d55.68703098053578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1519853826988" width="960" height="559" allowfullscreen></iframe> <!--frameborder="0" style="border:0" -->
         </div>
       <script src="js/main.js"></script>

@@ -7,18 +7,12 @@ var radioButtonsServises = document.querySelectorAll( '.service-data-controls in
 var formRadioButtonsServises = document.querySelector( '.service-data-controls form' );
 
 formRadioButtonsSlider.onclick = function(){
-  for (var i = 0; i < sliders.length ; i++) {
+      for ( i = 0; i < sliders.length ; i++) {
+        ( radioButtonsSlider[i].checked == true ) ?  sliders[i].classList.remove('visually-hidden') : sliders[i].classList.add('visually-hidden');
+      }
+    };
 
-  if ( radioButtonsSlider[i].checked == true ) {
-          sliders[i].classList.remove('visually-hidden');
-    }
-  else if ( radioButtonsSlider[i].checked == false ){
-          sliders[i].classList.add('visually-hidden');
-    }
-  }
-}
-
-window.onload = function () {
+window.onload  = function() {
   var len = sliders.length,
       i = len-1;
 
@@ -29,10 +23,10 @@ window.onload = function () {
 
     sliders[i].classList.remove('visually-hidden');
     radioButtonsSlider[i].checked = true;
-
+    
      window.setTimeout(go, 3000);
-    })();
-  }
+  })();
+}
 
 formRadioButtonsServises.onclick = function(){
   for (var i = 0; i < sliders.length ; i++) {
@@ -42,11 +36,36 @@ formRadioButtonsServises.onclick = function(){
       }
   else if ( radioButtonsServises[i].checked == false ){
     servises[i].classList.add('visually-hidden');
-      }
     }
   }
+}
+/*if (i > sliders.length ) { i = sliders.length; }
+formRadioButtonsSlider.onclick = function(){
+  for (var i = 0; i < sliders.length ; i++) {
+    ( radioButtonsSlider[i].checked == false ) ? sliders[i].classList.add('visually-hidden') : sliders[i].classList.remove('visually-hidden');
+  }
+}
 
+    if( radioButtonsSlider[i].checked == false ){
+        sliders[i].classList.add('visually-hidden');
+    }
+    else {
+      sliders[i].classList.remove('visually-hidden');
+    }
 
-/*  console.log("ok-1!");
+console.log("ok-1!");
 console.log(radioButtons);
-     */
+
+formRadioButtonsSlider.onclick = function(){
+  for (var i = 0; i < sliders.length ; i++) {
+
+  if ( radioButtonsSlider[i].checked == true ) {
+          sliders[i].classList.remove('visually-hidden');
+    }
+  else if ( radioButtonsSlider[i].checked == false ){
+          sliders[i].classList.add('visually-hidden');
+    }
+  }
+}
+window.onload = function
+*/

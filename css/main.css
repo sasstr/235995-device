@@ -13,61 +13,73 @@
 body {
   padding: 0;
   margin: 0;
-
 }
-/* Шапка  */
+/*  Шапка  --Header-- */
 
 
                                  /* Слайдер  */
 .slider-item {
-width: 1069px;
-height: 486px;
+  width: 1069px;
+  height: 486px;
 
 }
 
 .slider-item-headline {
   font-size: 47px;
   margin-left: 600px;
-
 }
 
 .slider-item p {
   font-size: 15px;
   margin-left: 600px;
-
 }
 
 .slider-item a {
   font-size: 18px;
   margin-left: 600px;
-
 }
 
 .slider-item table {
   margin-left: 600px;
-
 }
 
-
-
 .slider-item-1 {
- background-image: url('../img/slider-1.png');
- background-repeat: no-repeat;
- background-position: top left;
+  background-image: url('../img/slider-1.png');
+  background-repeat: no-repeat;
+  background-position: 10% 0;
 }
 
 .slider-item-2 {
   background-image: url('../img/slider-2.png');
   background-repeat: no-repeat;
-  background-position: top left;
+  background-position: 15% 0;
  }
 
  .slider-item-3 {
   background-image: url('../img/slider-3.png');
   background-repeat: no-repeat;
-  background-position: top left;
+  background-position: 5% 0;
  }
 
+.slider-item-data-column
+.value {
+  font-size: 36px;
+  line-height: 48px;
+}
+
+.slider-item-data-column
+.description {
+  font-size: 13px;
+  line-height: 20px;
+}
+
 .visually-hidden {
-     display: none;
-   }
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  overflow: hidden;
+}

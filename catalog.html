@@ -15,8 +15,9 @@
                 <img src="img/logo.png" width="164" height="36" alt="Логотип интернет магазина Девайс">
             </a>
             <div class="main-nav-search">
-                <form action="https://htmlacademy.ru" method="get">
+                <form action="https://echo.htmlacademy.ru" method="get">
                     <input type="search" name="search" id="find" placeholder="Поиск по сайту">
+                    <label for="find"></label>
                     <input type="submit" value="Найти">
                 </form>
             </div>
@@ -84,7 +85,7 @@
     <main class="container">
         <h1 class="page-headline">Моноподы для селфи</h1>
         <ul class="breadcrumbs">
-            <li><a class="breadcrumbs-link-1" href="#">Главная</a></li>
+            <li><a class="breadcrumbs-link-1" href="index.html">Главная</a></li>
             <li><a class="breadcrumbs-link-2" href="#">Каталог товаров</a></li>
             <li class="breadcrumbs-end">Моноподы для селфи</li>
         </ul>
@@ -96,13 +97,13 @@
                 <h2 class="catalog-top-sorting-headline">Сортировка:</h2>
                 <ul class="catalog-top-sorting-list">
                     <li>
-                        <a class="catalog-top-sorting-price checked" href="#">По цене</a>
+                        <a class="catalog-top-sorting-price checked" href="#" aria-label="Сортировка товаров по цене">По цене</a>
                     </li>
                     <li>
-                        <a class="catalog-top-sorting-type" href="#">По типу</a>
+                        <a class="catalog-top-sorting-type" href="#" aria-label="Сортировка товаров по типу">По типу</a>
                     </li>
                     <li>
-                        <a class="catalog-top-sorting-popularity" href="#">По популярности</a>
+                        <a class="catalog-top-sorting-popularity" href="#" aria-label="Сортировка товаров по популярности">По популярности</a>
                     </li>
                 </ul>
                 <ul class="catalog-top-arrows">
@@ -121,17 +122,17 @@
         </div>
         <section class="catalog-content">
             <div class="catalog-content-filter">
-                <form class="catalog-content-filter-form" action="https://htmlacademy.ru" method="post">
+                <form class="catalog-content-filter-form" action="https://echo.htmlacademy.ru" method="post">
                     <h3 class="catalog-filter-headline">Стоимость</h3>
                     <div class="catalog-content-price-range">
                         <div class="catalog-content-controls">
                             <div class="catalog-content-control-line"></div>
-                            <div class="catalog-content-control-min"></div>
-                            <div class="catalog-content-control-max"></div>
+                            <div class="catalog-content-control-min" aria-label="Выбор минимальной цены"></div>
+                            <div class="catalog-content-control-max" aria-label="Выбор максимальной цены"></div>
                         </div>
                         <div class="catalog-content-control-value">
-                            <span>от 0</span>
-                            <span>до 5000</span>
+                            <span aria-label="Порог минимальной цены">от 0</span>
+                            <span aria-label="Порог максимальной цены">до 5000</span>
                         </div>
                     </div>
                     <h3 class="catalog-filter-headline">Цвет</h3>
@@ -271,18 +272,18 @@
         <div class="main-footer-bottom">
             <div class="main-footer-social">
                <ul class="main-footer-social-list">
-                 <li class="main-footer-social-item">
-                    <a class="main-footer-social-link fb" href="#">Фэйсбук</a>
+                  <li class="main-footer-social-item">
+                      <a class="main-footer-social-link fb" href="#" aria-label="Фэйсбук">Фэйсбук</a>
                   </li>
-                 <li class="main-footer-social-item">
-                    <a class="main-footer-social-link insta" href="#">Инстаграм</a>
+                  <li class="main-footer-social-item">
+                      <a class="main-footer-social-link insta" href="#" aria-label="Инстаграм">Инстаграм</a>
                   </li>
-                 <li class="main-footer-social-item">
-                    <a class="main-footer-social-link twitter" href="#">Твиттер</a>
+                  <li class="main-footer-social-item">
+                      <a class="main-footer-social-link twitter" href="#" aria-label="Твиттер">Твиттер</a>
                   </li>
                </ul>
             </div>
-            <a class="logo-html-academy" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+            <a class="logo-html-academy" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Логотип HTML Academy">HTML Academy</a>
         </div>
     </footer>
 
