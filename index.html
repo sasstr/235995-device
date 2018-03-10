@@ -33,7 +33,7 @@
             <ul class="main-nav-menu-list">
                 <li class="main-nav-menu-item ">
                     <a class="main-nav-menu-item-link link-submenu" href="#">Каталог товаров</a>
-                    <ul class="main-nav-submenu">
+                    <ul class="main-nav-submenu ">
                         <li>
                             <ul class="main-nav-submenu-list submenu-1">
                                 <li>
@@ -81,14 +81,17 @@
     <main class="container">
         <h1 class="visually-hidden">Интернет-магазин "Device" это огромный выбор интересных девайсов</h1>
         <div class="slider">
-            <form class="slider-form-radio-btns" action="https://echo.htmlacademy.ru" method="post">
+            <div class="slider-form">
                 <input type="radio" id="slider-1" name="toggle" checked >
-                <input type="radio" id="slider-2" name="toggle" checked >
-                <input type="radio" id="slider-3" name="toggle" checked >
-                <label class="slider-toggle slider-1" for="slider-1" tabindex="0"></label>
-                <label class="slider-toggle slider-2" for="slider-2" tabindex="0"></label>
-                <label class="slider-toggle slider-3" for="slider-3" tabindex="0"></label>
-            </form>
+                <input type="radio" id="slider-2" name="toggle" >
+                <input type="radio" id="slider-3" name="toggle" >
+                <label class="slider-toggle slider-1" for="slider-1" tabindex="0"
+                aria-label="Баннер -Самая длинная палка для селфи доступна в нашем магазине."></label>
+                <label class="slider-toggle slider-2" for="slider-2" tabindex="0"
+                aria-label="Баннер -Мотивирующие фитнесс-браслеты помогут соблюдать диету"></label>
+                <label class="slider-toggle slider-3" for="slider-3" tabindex="0"
+                aria-label="Баннер -квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру"></label>
+            </div>
             <div class="slider-items">
                 <div class="slider-item slider-item-1">
                     <div class="slider-item-img img-1"><!-- Сюда при стилизации фоном картинку добавим--></div>
@@ -186,16 +189,14 @@
         <section class="services-data">
             <h2 class="visually-hidden">Услуги интернет магазина Device</h2>
             <div class="service-data-controls">
-                <form action="https://echo.htmlacademy.ru" method="get">
-                    <input type="radio" id="service-1" name="toggle-service" checked>
-                    <input type="radio" id="service-2" name="toggle-service">
-                    <input type="radio" id="service-3" name="toggle-service">
-                    <div class="services-data-controls">
-                        <label class="btn-decor-yellow" for="service-1" tabindex="0">Доставка</label>
-                        <label class="btn-decor-yellow" for="service-2" tabindex="0">Гарантия</label>
-                        <label class="btn-decor-yellow" for="service-3" tabindex="0">Кредит</label>
-                    </div>
-                </form>
+            <input type="radio" id="service-1" name="toggle-service" checked>
+            <input type="radio" id="service-2" name="toggle-service">
+            <input type="radio" id="service-3" name="toggle-service">
+            <div class="services-data-controls">
+                <label class="btn-decor-yellow" for="service-1" tabindex="0">Доставка</label>
+                <label class="btn-decor-yellow" for="service-2" tabindex="0">Гарантия</label>
+                <label class="btn-decor-yellow" for="service-3" tabindex="0">Кредит</label>
+            </div>
             </div>
             <div class="services-data-features">
                 <article class="services-data-feature delivery">

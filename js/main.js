@@ -1,23 +1,25 @@
 var sliders = document.querySelectorAll( '.slider-item' );
-var radioButtonsSlider = document.querySelectorAll( '.slider input[type="radio"]' );
-var formRadioButtonsSlider = document.querySelector( '.slider form' );
+var radioButtonsSlider = document.querySelectorAll( '.slider-form input[type="radio"]' );
+var formRadioButtonsSlider = document.querySelectorAll( '.slider-form input' );
+
+console.log(radioButtonsSlider);
+console.log(formRadioButtonsSlider);
 
 var servises = document.querySelectorAll( '.services-data-feature' );
 var radioButtonsServises = document.querySelectorAll( '.service-data-controls input[type="radio"]' );
-var formRadioButtonsServises = document.querySelector( '.service-data-controls form' );
+var formRadioButtonsServises = document.querySelector( '.service-data-controls input[type="radio"]' );
 
-formRadioButtonsSlider.onclick = function(){
-      for ( i = 0; i < sliders.length ; i++) {
-      ( radioButtonsSlider[i].checked == true ) ?  sliders[i].classList.remove('visually-hidden') : sliders[i].classList.add('visually-hidden'); //sliders[i].classList.toggle('visually-hidden');
-      }
-    };
+radioButtonsSlider.addEventListener("click", function (event) {
+  for ( i = 0; i < sliders.length ; i++) {
+  ( radioButtonsSlider[i].checked == true ) ?  sliders[i].classList.remove('visually-hidden') : sliders[i].classList.add('visually-hidden'); //sliders[i].classList.toggle('visually-hidden');
+    }
+  })
 
 formRadioButtonsServises.onclick = function(){
   for (var i = 0; i < sliders.length ; i++) {
     ( radioButtonsServises[i].checked == true ) ?  servises[i].classList.remove('visually-hidden') : servises[i].classList.add('visually-hidden');
   }
-}
-
+};
 window.onload  = function() {
   var len = sliders.length,
       i = len-1;
@@ -29,7 +31,7 @@ window.onload  = function() {
 
     sliders[i].classList.remove('visually-hidden');
     radioButtonsSlider[i].checked = true;
-
+    if (i > sliders.length ) { i = 0; }
      window.setTimeout(go, 3000);
   })();
 }

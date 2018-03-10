@@ -7,17 +7,24 @@
 6 Разное
 */
 
-                      /*    Общие стили для все страницы     */
+                      /*    Общие стили для всей страницы     */
 
 
 body {
   padding: 0;
   margin: 0;
+
 }
-/*  Шапка  --Header-- */
+
+      /*  Шапка  --Header-- */
+
+.main-header {
+  background-color: #f7e296;
 
 
-                                 /* Слайдер  */
+}
+
+               /* Слайдер  */
 .slider-item {
   width: 1069px;
   height: 486px;
@@ -27,6 +34,7 @@ body {
 .slider-item-headline {
   font-size: 47px;
   margin-left: 600px;
+  line-height: 60px;
 }
 
 .slider-item p {
