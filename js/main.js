@@ -12,6 +12,12 @@ formRadioButtonsSlider.onclick = function(){
       }
     };
 
+formRadioButtonsServises.onclick = function(){
+  for (var i = 0; i < sliders.length ; i++) {
+    ( radioButtonsServises[i].checked == true ) ?  servises[i].classList.remove('visually-hidden') : servises[i].classList.add('visually-hidden');
+  }
+}
+
 window.onload  = function() {
   var len = sliders.length,
       i = len-1;
@@ -23,38 +29,53 @@ window.onload  = function() {
 
     sliders[i].classList.remove('visually-hidden');
     radioButtonsSlider[i].checked = true;
-    
+
      window.setTimeout(go, 3000);
   })();
 }
 
-formRadioButtonsServises.onclick = function(){
-  for (var i = 0; i < sliders.length ; i++) {
+/*  Открыть и закрыть попапы  */
 
-  if ( radioButtonsServises[i].checked == true ) {
-    servises[i].classList.remove('visually-hidden');
-      }
-  else if ( radioButtonsServises[i].checked == false ){
-    servises[i].classList.add('visually-hidden');
-    }
+var writeToUsPopup = document.querySelector('.write-to-us');
+var btnWriteToUsPopupClose = document.querySelector('.write-to-us .pop-up-close');
+var btnSubmit = document.querySelector('.pop-up-submit');
+var btnWriteToUs = document.querySelector('.btn-write-us');
+var mapPopup = document.querySelector('.map-pop-up');
+var btnMapPopupClose = document.querySelector('.map-pop-up .pop-up-close');
+var openMapPopup = document.querySelector('.shop-data-contacts-map-link');
+
+btnWriteToUs.addEventListener("click", function (event) {
+  event.preventDefault();
+  writeToUsPopup.classList.remove('visually-hidden');
   }
-}
+);
+
+openMapPopup.addEventListener("click", function (event) {
+  event.preventDefault();
+  mapPopup.classList.remove('visually-hidden');
+  }
+);
+
+btnWriteToUsPopupClose.addEventListener("click", function (event) {
+  event.preventDefault();
+  writeToUsPopup.classList.add("visually-hidden");
+  }
+);
+
+btnMapPopupClose.addEventListener("click", function (event) {
+  event.preventDefault();
+  mapPopup.classList.add("visually-hidden");
+  }
+);
+
+
+
 /*if (i > sliders.length ) { i = sliders.length; }
 formRadioButtonsSlider.onclick = function(){
   for (var i = 0; i < sliders.length ; i++) {
     ( radioButtonsSlider[i].checked == false ) ? sliders[i].classList.add('visually-hidden') : sliders[i].classList.remove('visually-hidden');
   }
 }
-
-    if( radioButtonsSlider[i].checked == false ){
-        sliders[i].classList.add('visually-hidden');
-    }
-    else {
-      sliders[i].classList.remove('visually-hidden');
-    }
-
-console.log("ok-1!");
-console.log(radioButtons);
 
 formRadioButtonsSlider.onclick = function(){
   for (var i = 0; i < sliders.length ; i++) {
@@ -68,4 +89,18 @@ formRadioButtonsSlider.onclick = function(){
   }
 }
 window.onload = function
+
+    if( radioButtonsSlider[i].checked == false ){
+        sliders[i].classList.add('visually-hidden');
+    }
+    else {
+      sliders[i].classList.remove('visually-hidden');
+    }
+
+  if ( radioButtonsServises[i].checked == true ) {
+    servises[i].classList.remove('visually-hidden');
+      }
+  else if ( radioButtonsServises[i].checked == false ){
+    servises[i].classList.add('visually-hidden');
+    }
 */
