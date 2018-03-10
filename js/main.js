@@ -8,7 +8,7 @@ var formRadioButtonsServises = document.querySelector( '.service-data-controls f
 
 formRadioButtonsSlider.onclick = function(){
       for ( i = 0; i < sliders.length ; i++) {
-        ( radioButtonsSlider[i].checked == true ) ?  sliders[i].classList.remove('visually-hidden') : sliders[i].classList.add('visually-hidden');
+      ( radioButtonsSlider[i].checked == true ) ?  sliders[i].classList.remove('visually-hidden') : sliders[i].classList.add('visually-hidden'); //sliders[i].classList.toggle('visually-hidden');
       }
     };
 
