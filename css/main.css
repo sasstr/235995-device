@@ -13,6 +13,7 @@
 body {
   padding: 0;
   margin: 0;
+  font-family: Gilroy , Sans Serif;
 
 }
 
@@ -34,7 +35,7 @@ body {
 .slider-item-headline {
   font-size: 47px;
   margin-left: 600px;
-  line-height: 60px;
+  line-height: 56px;
 }
 
 .slider-item p {

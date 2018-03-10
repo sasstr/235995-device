@@ -7,15 +7,17 @@ console.log(formRadioButtonsSlider);
 
 var servises = document.querySelectorAll( '.services-data-feature' );
 var radioButtonsServises = document.querySelectorAll( '.service-data-controls input[type="radio"]' );
-var formRadioButtonsServises = document.querySelector( '.service-data-controls input[type="radio"]' );
+var formRadioButtonsServises = document.querySelectorAll( '.service-data-controls input[type="radio"]' );
 
-radioButtonsSlider.addEventListener("click", function (event) {
-  for ( i = 0; i < sliders.length ; i++) {
-  ( radioButtonsSlider[i].checked == true ) ?  sliders[i].classList.remove('visually-hidden') : sliders[i].classList.add('visually-hidden'); //sliders[i].classList.toggle('visually-hidden');
-    }
-  })
+[].forEach.call(formRadioButtonsSlider, function(el){
+  formRadioButtonsSlider.addEventListener("click", function(e){
+  e.preventDefault();
+  sliders.classList.toggle('visually-hidden');
+      });
+  });
 
 formRadioButtonsServises.onclick = function(){
+
   for (var i = 0; i < sliders.length ; i++) {
     ( radioButtonsServises[i].checked == true ) ?  servises[i].classList.remove('visually-hidden') : servises[i].classList.add('visually-hidden');
   }
