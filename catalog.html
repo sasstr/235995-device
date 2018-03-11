@@ -17,7 +17,7 @@
             <div class="main-nav-search">
                 <form action="https://echo.htmlacademy.ru" method="get">
                     <input type="search" name="search" id="find" placeholder="Поиск по сайту">
-                    <label for="find">Поиск по сайту</label>
+                    <label class="visually-hidden" for="find">Поиск по сайту</label>
                     <input type="submit" value="Найти">
                 </form>
             </div>
@@ -87,7 +87,7 @@
         <ul class="breadcrumbs">
             <li><a class="breadcrumbs-link" href="index.html">Главная</a></li>
             <li><a class="breadcrumbs-link" href="#">Каталог товаров</a></li>
-            <li class="breadcrumbs-end">Моноподы для селфи</li>
+            <li class="breadcrumbs-end" aria-current="page"><span class="visually-hidden">Текущая страница:</span>Моноподы для селфи</li>
         </ul>
         <div class="catalog-top">
             <div class="catalog-top-filter">
@@ -228,7 +228,7 @@
                     <a>1</a>
                 </li>
                 <li class="catalog-items-page-number">
-                    <a href="#">2</a>
+                    <a href="#" aria-current="page"><span class="visually-hidden">Текущая страница:</span>2</a>
                 </li>
                 <li class="catalog-items-page-number">
                     <a href="#">3</a>
