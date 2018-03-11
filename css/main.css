@@ -13,7 +13,7 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: Gilroy , Sans Serif;
+  font-family: Gilroy , Arial, Sans-Serif ;
 
 }
 
@@ -21,6 +21,7 @@ body {
 
 .main-header {
   background-color: #f7e296;
+
 
 
 }
