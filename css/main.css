@@ -14,17 +14,29 @@ body {
   padding: 0;
   margin: 0;
   font-family: Gilroy , Arial, Sans-Serif ;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  background-color: #ffffff;
+
 
 }
 
       /*  Шапка  --Header-- */
 
-.main-header {
+.wrapper {
   background-color: #f7e296;
+  margin-top: 40px;
 
-
-
+  position: relative;
 }
+
+.main-nav-logo {
+  position: absolute;
+  top: -18px;
+  left: 60px;
+}
+
 
                /* Слайдер  */
 .slider-item {
@@ -83,6 +95,56 @@ body {
   line-height: 20px;
 }
 
+/*   Главный контент <Main>  */
+
+.catalog-item  {
+  background-color: #f7e296;
+}
+
+.catalog-item .item-1 {
+  background-image: url('../img/popular-1.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.catalog-item .item-2 {
+  background-image: url('../img/  ');
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.catalog-item .item-3 {
+  background-image: url('../img/  ');
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.catalog-item .item-4 {
+  background-image: url('../img/  ');
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.catalog-item .item-5 {
+  background-image: url('../img/  ');
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.catalog-item .item-6 {
+  background-image: url('../img/  ');
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+
+
+
+
+
+
+
+/*   Подвал контент <Footer>  */
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -93,3 +155,5 @@ body {
   padding: 0;
   overflow: hidden;
 }
+
+
