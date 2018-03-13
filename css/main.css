@@ -9,7 +9,6 @@
 
                       /*    Общие стили для всей страницы     */
 
-
 body {
   padding: 0;
   margin: 0;
@@ -23,8 +22,7 @@ body {
 a {
   text-decoration: none;
 }
-
-      /*  Шапка  --Header-- */
+                         /*  Шапка  --Header-- */
 
 .wrapper {
   background-color: #f7e296;
@@ -37,6 +35,14 @@ a {
   position: absolute;
   top: -18px;
   left: 60px;
+}
+
+.main-nav-logo:hover {
+  opacity: 0.6;
+}
+
+.main-nav-logo:active {
+  opacity: 0.3;
 }
 
 .main-nav a {
@@ -56,9 +62,9 @@ a {
   text-transform: uppercase;
 }
 
-/*   Главный контент <Main>  */
+                  /*   Главный контент <Main>  */
 
-               /* Слайдер  */
+                    /* Слайдер  */
 .slider-item {
   width: 1069px;
   height: 486px;
@@ -114,15 +120,21 @@ a {
   font-size: 13px;
   line-height: 20px;
 }
+                       /*   Разделы каталога по категориям  */
+
+.catalog-items-list {
+ display: flex;
+}
 
 .catalog-item  {
   background-color: #f7e296;
   list-style: none;
+  margin-right: 40px;
 
   width: 160px;
   height: 160px;
 }
-/*   Разделы каталога по категориям  */
+
 .item-1 {
   background-image: url('../img/popular-1.svg');
   background-repeat: no-repeat;
@@ -158,12 +170,11 @@ a {
   background-repeat: no-repeat;
   background-position: center center;
 }
-/*   Слайдер Сервисов   */
+                  /*   Слайдер Сервисов   */
 
 .services-data-controls {
   text-transform: uppercase;
   text-align: center;
-
 }
 
 .services-data-feature {
@@ -185,7 +196,6 @@ a {
   line-height: 30px;
 }
 
-
 .delivery {
   background-image: url('../img/delivery.svg');
   background-repeat: no-repeat;
@@ -203,24 +213,62 @@ a {
   background-repeat: no-repeat;
   background-position: right 210px bottom 141px;
 }
-
+                   /*   Блок  бренды  */
 .brend-items {
+  display: flex;
   list-style: none;
 }
 
 .brend-item {
   opacity: 0.2;
-  filter: grayscale(1); /*   Жаль не работает в IE11  */
+  filter: grayscale(1); /* (Жаль не работает в IE11) это временное решение  */
   list-style: none;
 }
 
 .brend-item:hover {
   opacity: 1;
-  filter: grayscale(0); /*   Жаль не работает в IE11  */
+  filter: grayscale(0); /*  ( Жаль не работает в IE11 ) думаю может сделать спрайтом ?  */
 }
 
+                      /* О нас и Контакты  */
 
-/*   Подвал контент <Footer>  */
+.shop-data {
+  display: flex;
+}
+
+.shop-data-about-us,
+.shop-data-contacts p {
+  color: #464646;
+  font-family: "Open Sans";
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+.shop-data-about-us-headline,
+.shop-data-contacts-headline {
+  color: #000000;
+  font-size: 47px;
+  font-weight: 700;
+  line-height: 48px;
+}
+
+.delivery-vendors {
+  color: #000000;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+/*   Подвал контент <Footer>
+
+.main-footer-middle,
+.main-footer-bottom,
+.main-footer-user-menu,
+.main-footer-middle-features,
+.main-footer-social-list {
+  display: flex;
+} */
 
 .main-footer {
   background-color: #464646;
@@ -251,6 +299,9 @@ a {
   text-transform: uppercase;
   font-weight: 700;
 }
+
+
+/*  Служебные классы  */
 
 .visually-hidden {
   position: absolute;
