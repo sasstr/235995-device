@@ -18,8 +18,10 @@ body {
   line-height: 24px;
   color: #000000;
   background-color: #ffffff;
+}
 
-
+a {
+  text-decoration: none;
 }
 
       /*  Шапка  --Header-- */
@@ -37,6 +39,24 @@ body {
   left: 60px;
 }
 
+.main-nav a {
+  color: #000000;
+}
+
+.main-nav-user-menu,
+.main-nav-menu-list,
+.main-nav-submenu,
+.main-nav-submenu-list {
+  list-style: none;
+}
+
+.main-nav-menu-list
+.main-nav-menu-item-link {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/*   Главный контент <Main>  */
 
                /* Слайдер  */
 .slider-item {
@@ -95,56 +115,143 @@ body {
   line-height: 20px;
 }
 
-/*   Главный контент <Main>  */
-
 .catalog-item  {
   background-color: #f7e296;
-}
+  list-style: none;
 
-.catalog-item .item-1 {
+  width: 160px;
+  height: 160px;
+}
+/*   Разделы каталога по категориям  */
+.item-1 {
   background-image: url('../img/popular-1.svg');
   background-repeat: no-repeat;
   background-position: center center;
 }
 
-.catalog-item .item-2 {
-  background-image: url('../img/  ');
+.item-2 {
+  background-image: url('../img/popular-2.svg');
   background-repeat: no-repeat;
   background-position: center center;
 }
 
-.catalog-item .item-3 {
-  background-image: url('../img/  ');
+.item-3 {
+  background-image: url('../img/popular-3.svg');
   background-repeat: no-repeat;
   background-position: center center;
 }
 
-.catalog-item .item-4 {
-  background-image: url('../img/  ');
+.item-4 {
+  background-image: url('../img/popular-4.svg');
   background-repeat: no-repeat;
   background-position: center center;
 }
 
-.catalog-item .item-5 {
-  background-image: url('../img/  ');
+.item-5 {
+  background-image: url('../img/popular-5.svg');
   background-repeat: no-repeat;
   background-position: center center;
 }
 
-.catalog-item .item-6 {
-  background-image: url('../img/  ');
+.item-6 {
+  background-image: url('../img/popular-6.svg');
   background-repeat: no-repeat;
   background-position: center center;
 }
+/*   Слайдер Сервисов   */
+
+.services-data-controls {
+  text-transform: uppercase;
+  text-align: center;
+
+}
+
+.services-data-feature {
+  width: 1440px;
+  height: 288px;
+  background-color: #e5e5e5;
+  background-repeat: no-repeat;
+}
+
+.services-data-feature-headline {
+  font-size: 47px;
+  font-weight: 700;
+  line-height: 48px;
+}
+
+.services-data-feature-headline p {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+}
 
 
+.delivery {
+  background-image: url('../img/delivery.svg');
+  background-repeat: no-repeat;
+  background-position: right 206px bottom 139px;
+}
 
+.warranty {
+  background-image: url('../img/warranty.svg');
+  background-repeat: no-repeat;
+  background-position: right 186px bottom 133px;
+}
 
+.credit {
+  background-image: url('../img/credit.svg');
+  background-repeat: no-repeat;
+  background-position: right 210px bottom 141px;
+}
 
+.brend-items {
+  list-style: none;
+}
 
+.brend-item {
+  opacity: 0.2;
+  filter: grayscale(1); /*   Жаль не работает в IE11  */
+  list-style: none;
+}
+
+.brend-item:hover {
+  opacity: 1;
+  filter: grayscale(0); /*   Жаль не работает в IE11  */
+}
 
 
 /*   Подвал контент <Footer>  */
+
+.main-footer {
+  background-color: #464646;
+  color: #ffffff;
+}
+
+.main-footer-user-menu,
+.main-footer-middle-features,
+.main-footer-social-list {
+  list-style: none;
+}
+
+.main-footer-user-menu a,
+.main-footer-middle-features a,
+.main-footer-social-list a,
+.logo-html-academy {
+  color: #ffffff;
+}
+
+.main-footer-user-menu a {
+  font-family: "Open Sans";
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 36px;
+}
+
+.main-footer-middle-features a {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
