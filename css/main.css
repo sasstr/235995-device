@@ -41,7 +41,7 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: Gilroy , Arial, Sans-Serif ;
+  font-family: Gilroy, Arial, Helvetica, sans-serif;
   font-size: 18px;
   line-height: 24px;
   color: #000000;
@@ -52,6 +52,9 @@ a {
   text-decoration: none;
 }
                          /*  Шапка  --Header-- */
+.main-nav a {
+  color: #000000;
+}
 
 .header-container {
   position: relative;
@@ -108,8 +111,19 @@ a {
   border: none;
 }
 
-.main-nav a {
+.main-nav-user-menu-link {
+  font-size: 15px;
+  line-height: 30px;
   color: #000000;
+  letter-spacing: 0.01em;
+}
+
+.main-nav-user-menu-link:hover {
+  opacity: 0.6;
+}
+
+.main-nav-user-menu-link:active {
+  opacity: 0.3;
 }
 
 .main-nav-user-menu,
@@ -119,10 +133,38 @@ a {
   list-style: none;
 }
 
-.main-nav-menu-list
 .main-nav-menu-item-link {
   font-weight: 700;
   text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.main-nav-menu-item-link:hover {
+  opacity: 0.6;
+}
+
+.main-nav-menu-item-link:active {
+  opacity: 0.3;
+}
+
+.main-nav-submenu {
+  display: flex;
+}
+
+.main-nav-submenu-list-link {
+  font-family: "Open Sans Light", Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 36px;
+  letter-spacing: 0.01em;
+  font-weight: 300;
+}
+
+.main-nav-submenu-list-link:hover {
+  opacity: 0.6;
+}
+
+.main-nav-submenu-list-link:active {
+  opacity: 0.3;
 }
 
                   /*   Главный контент <Main>  */
@@ -135,14 +177,22 @@ a {
 }
 
 .slider-item-headline {
+  font-family: "Gilroy ExtraBold", Arial, Helvetica, sans-serif;
   font-size: 47px;
   margin-left: 600px;
   line-height: 56px;
+  letter-spacing: 0.01em;
 }
 
 .slider-item p {
+  font-family: "Open Sans Light", Arial, Helvetica, sans-serif;
   font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 0.01em;
+  font-weight: 300;
+
   margin-left: 600px;
+
 }
 
 .slider-item a {
@@ -182,6 +232,7 @@ a {
 .description {
   font-size: 13px;
   line-height: 20px;
+  font-family: "Gilroy Light", Arial, sans-serif
 }
                        /*   Разделы каталога по категориям  */
 
@@ -328,6 +379,8 @@ a {
   display: flex;
 }
 
+
+
 .shop-data-about-us,
 .shop-data-contacts p {
   color: #464646;
@@ -344,6 +397,7 @@ a {
   font-size: 47px;
   font-weight: 700;
   line-height: 48px;
+  letter-spacing: 0.01em;
 }
 
 .delivery-vendors {
@@ -360,7 +414,57 @@ a {
 }
 /* Вторая страница  catalog.html */
 
+.breadcrumbs,
+.catalog-top-sorting-list,
+.catalog-top-arrows,
+.catalog-items-pagination {
+  list-style: none;
+}
 
+.catalog-items-pagination,
+.catalog-content-items {
+  display: flex;
+}
+
+
+.page-headline {
+  font-family: "Gilroy ExtraBold", Arial, Helvetica, sans-serif;
+  color: #000000;
+  font-size: 47px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0.01em;
+}
+
+.breadcrumbs {
+  font-family: "Open Sans Light", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  font-weight: 300;
+  opacity: 0.3;
+}
+
+.breadcrumbs:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbs:active {
+  opacity: 0.1;
+}
+
+.catalog-top {
+  display: flex;
+}
+
+.catalog-top-filter-headline {
+  font-family: "Gilroy ExtraBold", Arial, Helvetica, sans-serif;
+  color: #000000;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
 /*   Подвал контент <Footer>
 
 .main-footer-middle,
@@ -380,7 +484,12 @@ a {
 }
 
 .main-footer-user-menu-link {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 36px;
+  letter-spacing: 0.01em;
   opacity: 0.7;
+  font-weight: 300;
 }
 
 .main-footer-user-menu-link:hover {
@@ -409,13 +518,6 @@ a {
   color: #ffffff;
 }
 
-.main-footer-user-menu a {
-  font-family: "Open Sans";
-  font-size: 15px;
-  font-weight: 300;
-  line-height: 36px;
-}
-
 .main-footer-middle-features a {
   text-transform: uppercase;
   font-weight: 700;
@@ -441,6 +543,11 @@ a {
   opacity: 0.1;
 }
 
+.logo-html-academy {
+  background-image: url('../img/logo-html-footer.svg');
+  background-repeat: no-repeat;
+}
+
 .logo-html-academy:hover {
   opacity: 0.6;
 }
@@ -457,20 +564,20 @@ a {
   text-align: center;
   font-family: "Gilroy ExtraBold", Arial, sans-serif;
   text-transform: uppercase;
-  letter-spacing: 4px;
+  letter-spacing: 0.2em;
 }
 
 .btn-decor-yellow:hover {
   color: #000000;
   background-color: rgba(240, 197, 46, 1);
-  letter-spacing: 4px;
+  letter-spacing: 0.2em;
 }
 
 .btn-decor-yellow:active  {
   color: #000000;
   background-color: #f0c52e;
   opacity: 0.3;
-  letter-spacing: 4px;
+  letter-spacing: 0.2em;
 }
 
 .btn-decor-yellow::after {
