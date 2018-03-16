@@ -679,6 +679,46 @@ a {
   opacity: 0.3;
 }
 
+
+                   /*  Попап Напишите нам  */
+.pop-up-close {
+  position: relative;
+  display: inline-block;
+}
+
+.pop-up-label-value {
+  font-family: "Gilroy ExtraBold", Arial, Helvetica, sans-serif;
+  color: #000000;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.write-to-us-form-item input::placeholder {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.write-to-us-form-item textarea::-webkit-input-placeholder {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.pop-up-close::after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  background-image: url('../img/modal-close.svg');
+  background-repeat: no-repeat;
+  background-position: top center;
+  width:55px;
+  height:55px;
+}
+
+                  /* Попап  Карта с нашим адресом  */
+
 /*  Служебные классы  */
 
 .btn-decor-yellow {
@@ -719,5 +759,4 @@ a {
   padding: 0;
   overflow: hidden;
 }
-
 
