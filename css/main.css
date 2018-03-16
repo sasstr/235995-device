@@ -10,30 +10,34 @@
 
 @font-face {
   font-family: "Open Sans";
+  font-weight: 300;
   src:  url(../fonts/opensans.woff2 ) format("woff2"),
         url(../fonts/opensans.woff ) format("woff"),
-        url(../fonts/OpenSans-Regular.ttf ) format("ttf");
+        url(../fonts/opensans-regular.ttf ) format("ttf");
 }
 
 @font-face {
-  font-family: "Open Sans Light";
+  font-family: "Open Sans";
+  font-weight: 700;
   src:  url(../fonts/opensanslight.woff2 ) format("woff2"),
         url(../fonts/opensanslight.woff ) format("woff"),
-        url(../fonts/OpenSans-Light.ttf ) format("ttf");
+        url(../fonts/opensans-light.ttf ) format("ttf");
 }
 
 @font-face {
-  font-family: "Gilroy Light";
+  font-family: "Gilroy";
+  font-weight: 300;
   src:  url(../fonts/gilroylight.woff2) format("woff2"),
         url(../fonts/gilroylight.woff ) format("woff"),
-        url(../fonts/Gilroylight.ttf ) format("ttf");
+        url(../fonts/gilroylight.ttf ) format("ttf");
 }
 
 @font-face {
-  font-family: "Gilroy ExtraBold";
+  font-family: "Gilroy";
+  font-weight: 700;
   src:  url(../fonts/gilroyextrabold.woff2) format("woff2"),
         url(../fonts/gilroyextrabold.woff ) format("woff"),
-        url(../fonts/Gilroyextrabold.ttf ) format("ttf");
+        url(../fonts/gilroyextrabold.ttf ) format("ttf");
 }
 
                       /*    Общие стили для всей страницы     */
@@ -41,7 +45,7 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: Gilroy, Arial, Helvetica, sans-serif;
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
   font-size: 18px;
   line-height: 24px;
   color: #000000;
@@ -82,6 +86,11 @@ a {
   opacity: 0.3;
 }
 
+.main-nav-wrapper,
+.main-nav-user-menu {
+  display: flex;
+}
+
 .main-nav-search-data {
   background-color: #f7e296;
   border: none;
@@ -112,6 +121,7 @@ a {
 }
 
 .main-nav-user-menu-link {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
   font-size: 15px;
   line-height: 30px;
   color: #000000;
@@ -133,10 +143,15 @@ a {
   list-style: none;
 }
 
+.main-nav-menu-list {
+  display: flex;
+}
+
 .main-nav-menu-item-link {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+  justify-content: space-between;
 }
 
 .main-nav-menu-item-link:hover {
@@ -152,7 +167,7 @@ a {
 }
 
 .main-nav-submenu-list-link {
-  font-family: "Open Sans Light", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
   font-size: 15px;
   line-height: 36px;
   letter-spacing: 0.01em;
@@ -177,7 +192,7 @@ a {
 }
 
 .slider-item-headline {
-  font-family: "Gilroy ExtraBold", Arial, Helvetica, sans-serif;
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
   font-size: 47px;
   margin-left: 600px;
   line-height: 56px;
@@ -185,12 +200,11 @@ a {
 }
 
 .slider-item p {
-  font-family: "Open Sans Light", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
   font-size: 15px;
   line-height: 30px;
   letter-spacing: 0.01em;
   font-weight: 300;
-
   margin-left: 600px;
 
 }
@@ -205,34 +219,41 @@ a {
 }
 
 .slider-item-1 {
-  background-image: url('../img/slider-1.png');
+  background-image: url(../img/slider-1.png);
   background-repeat: no-repeat;
   background-position: 10% 0;
 }
 
 .slider-item-2 {
-  background-image: url('../img/slider-2.png');
+  background-image: url(../img/slider-2.png);
   background-repeat: no-repeat;
   background-position: 15% 0;
  }
 
  .slider-item-3 {
-  background-image: url('../img/slider-3.png');
+  background-image: url(../img/slider-3.png);
   background-repeat: no-repeat;
   background-position: 5% 0;
  }
 
 .slider-item-data-column
 .value {
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
   font-size: 36px;
   line-height: 48px;
+  letter-spacing: 0.01em;
+  font-weight: 300;
+  color: #000000;
 }
 
 .slider-item-data-column
 .description {
   font-size: 13px;
   line-height: 20px;
-  font-family: "Gilroy Light", Arial, sans-serif
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.01 em;
+  color: #000000;
 }
                        /*   Разделы каталога по категориям  */
 
@@ -243,30 +264,17 @@ a {
 
 .catalog-item  {
   list-style: none;
-
   color: #000000;
   font-weight: 700;
   width: 160px;
   height: 160px;
   margin-right: 40px;
-}
-
-.catalog-item::after  {
-  content: '';
-  position: absolute;
   background-color: rgba(240, 197, 46, 0.5);
-  background-repeat: no-repeat;
-  background-position: center center;
-  display:block;
-  background-size: cover;
-
-  margin-right: 40px;
 }
 
-.catalog-item::after:hover {
-  content: '';
-  background-color: rgba(240, 197, 46, 1);
 
+.catalog-item:hover {
+  background-color: rgba(240, 197, 46, 1);
 }
 
 .catalog-item-link {
@@ -274,42 +282,38 @@ a {
 }
 
 .item-1 {
-  background-image: url('../img/popular-1.svg');
+  background-image: url(../img/popular-1.svg);
   background-repeat: no-repeat;
   background-position: center center;
-}
-
-.item-1:active {
-  background-image: url('../img/popular-1.svg');
-  opacity: 0.3;
 }
 
 .item-2 {
-  background-image: url('../img/popular-2.svg');
+  background-image: url(../img/popular-2.svg);
   background-repeat: no-repeat;
   background-position: center center;
+
 }
 
 .item-3 {
-  background-image: url('../img/popular-3.svg');
+  background-image: url(../img/popular-3.svg);
   background-repeat: no-repeat;
   background-position: center center;
 }
 
 .item-4 {
-  background-image: url('../img/popular-4.svg');
+  background-image: url(../img/popular-4.svg);
   background-repeat: no-repeat;
   background-position: center center;
 }
 
 .item-5 {
-  background-image: url('../img/popular-5.svg');
+  background-image: url(../img/popular-5.svg);
   background-repeat: no-repeat;
   background-position: center center;
 }
 
 .item-6 {
-  background-image: url('../img/popular-6.svg');
+  background-image: url(../img/popular-6.svg);
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -340,19 +344,19 @@ a {
 }
 
 .delivery {
-  background-image: url('../img/delivery.svg');
+  background-image: url(../img/delivery.svg);
   background-repeat: no-repeat;
   background-position: right 206px bottom 139px;
 }
 
 .warranty {
-  background-image: url('../img/warranty.svg');
+  background-image: url(../img/warranty.svg);
   background-repeat: no-repeat;
   background-position: right 186px bottom 133px;
 }
 
 .credit {
-  background-image: url('../img/credit.svg');
+  background-image: url(../img/credit.svg);
   background-repeat: no-repeat;
   background-position: right 210px bottom 141px;
 }
@@ -379,8 +383,6 @@ a {
   display: flex;
 }
 
-
-
 .shop-data-about-us,
 .shop-data-contacts p {
   color: #464646;
@@ -392,7 +394,7 @@ a {
 
 .shop-data-about-us-headline,
 .shop-data-contacts-headline {
-  font-family: "Gilroy ExtraBold", Arial, Helvetica, sans-serif;
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
   color: #000000;
   font-size: 47px;
   font-weight: 700;
@@ -401,7 +403,7 @@ a {
 }
 
 .delivery-vendors {
-  font-family: "Gilroy ExtraBold", Arial, Helvetica, sans-serif;
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
   color: #000000;
   font-size: 16px;
   font-weight: 700;
@@ -410,7 +412,6 @@ a {
 
 .delivery-vendor-link {
   color: #000000;
-
 }
                 /* Вторая страница  catalog.html */
 
@@ -430,7 +431,7 @@ a {
 }
 
 .page-headline {
-  font-family: "Gilroy ExtraBold", Arial, Helvetica, sans-serif;
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
   color: #000000;
   font-size: 47px;
   font-weight: 700;
@@ -439,7 +440,7 @@ a {
 }
                      /*  Хлебные крошки   */
 .breadcrumbs {
-  font-family: "Open Sans Light", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.01em;
@@ -499,7 +500,7 @@ a {
 
 .catalog-top-filter-headline,
 .catalog-top-sorting-headline {
-  font-family: "Gilroy ExtraBold", Arial, Helvetica, sans-serif;
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
   color: #000000;
   font-weight: 700;
   text-align: center;
@@ -507,6 +508,13 @@ a {
   letter-spacing: 0.2em;
 }
                /*  Фильтр - чекбоксы  */
+.catalog-filter-box,
+.catalog-filter-radio {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 40px;
+  letter-spacing: 0.01em;
+}
 
 .catalog-content-filter-form input[type="checkbox"]:checked:active,
 .catalog-filter-box:active {
@@ -546,10 +554,22 @@ a {
 
 }
 
+.catalog-content-item-price {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  font-weight: 300;
+}
+
+.catalog-content-item-link,
+.btn-to-compare {
+  color: #000000;
+}
                /* Пагинация страниц каталога */
 
 .catalog-items-pagination {
-  font-family: "Gilroy ExtraBold", Arial, Helvetica, sans-serif;
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
   color: #000000;
   font-size: 16px;
   line-height: 24px;
@@ -667,7 +687,7 @@ a {
 }
 
 .logo-html-academy {
-  background-image: url('../img/logo-html-footer.svg');
+  background-image: url(../img/logo-html-footer.svg);
   background-repeat: no-repeat;
 }
 
@@ -681,17 +701,18 @@ a {
 
 
                    /*  Попап Напишите нам  */
-.pop-up-close {
-  position: relative;
-  display: inline-block;
-}
-
 .pop-up-label-value {
-  font-family: "Gilroy ExtraBold", Arial, Helvetica, sans-serif;
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
   color: #000000;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
+}
+
+.write-to-us {
+  min-width: 960px;
+  min-height: 553px;
+  margin: 0 auto;
 }
 
 .write-to-us-form-item input::placeholder {
@@ -706,26 +727,43 @@ a {
   line-height: 18px;
 }
 
-.pop-up-close::after {
-  content: '';
-  position: absolute;
-  display: inline-block;
-  background-image: url('../img/modal-close.svg');
+.pop-up-close {
+  background-image: url(../img/modal-close.svg);
   background-repeat: no-repeat;
-  background-position: top center;
+  background-color: #ffffff;
   width:55px;
   height:55px;
+  border: none;
+  opacity: 0.5;
+}
+
+.pop-up-close:hover {
+  opacity: 1;
+}
+
+.pop-up-close:active {
+  opacity: 0.3;
+}
+
+.pop-up-submit {
+  background-color: #ffffff;
 }
 
                   /* Попап  Карта с нашим адресом  */
 
-/*  Служебные классы  */
+.map-pop-up {
+  min-width: 960px;
+  min-height: 559px;
+  margin: 0 auto;
+}
+
+                        /*  Служебные классы  */
 
 .btn-decor-yellow {
   color: #000000;
   font-weight: 700;
   text-align: center;
-  font-family: "Gilroy ExtraBold", Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.2em;
   border: none;
@@ -742,11 +780,6 @@ a {
   background-color: #f0c52e;
   opacity: 0.3;
   letter-spacing: 0.2em;
-}
-
-.btn-decor-yellow::after {
-  content: '';
-
 }
 
 .visually-hidden {
