@@ -62,14 +62,24 @@ a {
 
 .header-container {
   position: relative;
+  min-width: 1160px;
+  min-height: 300px;
   margin-top: 40px;
+  margin-left: 140px;
+  margin-right: 140px;
+  background-color: #f7e296
 }
 
 .wrapper {
-  background-color: #f7e296;
-/*
-  margin-left: 140px;
-  margin-right: 140px; */
+  padding-top: 50px;
+  margin-left: 60px;
+  margin-right: 60px;
+  /*  margin-bottom: 40px; */
+}
+
+.wrapper,
+.inner-page {
+  margin-bottom: 36px;
 }
 
 .main-nav-logo {
@@ -87,9 +97,18 @@ a {
 }
 
 .main-nav-wrapper,
-.main-nav-user-menu {
+.main-nav-user-menu{
   display: flex;
+  min-width: 1040px;
+  min-height: 30px;
+  flex-wrap: wrap;
 }
+
+.main-nav-wrapper  {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 
 .main-nav-search-data {
   background-color: #f7e296;
@@ -119,6 +138,11 @@ a {
   opacity: 0.3;
   border: none;
 }
+/* не сработало не понимаю почему
+.main-nav-search-data:focus .main-nav-search-btn {
+  background-color: #f7e296;
+  border: 1px solid #000000 ;
+}*/
 
 .main-nav-user-menu-link {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
@@ -141,6 +165,14 @@ a {
 .main-nav-submenu,
 .main-nav-submenu-list {
   list-style: none;
+}
+
+.main-nav-menu-list .main-nav-submenu {
+  display: none;
+}
+
+.main-nav-menu-list:hover .main-nav-submenu {
+  display: flex;
 }
 
 .main-nav-menu-list {
@@ -185,10 +217,18 @@ a {
                   /*   Главный контент <Main>  */
 
                     /* Слайдер  */
+.slider-form {
+  margin-right: 140px;
+  margin-left: 230px;
+}
+
 .slider-item {
   width: 1069px;
   height: 486px;
-
+  margin-right: 140px;
+  margin-left: 230px;
+  margin-bottom: 106px;
+  margin-top: -60px; /* не удачная попытка наползти на слайдер  */
 }
 
 .slider-item-headline {
@@ -259,8 +299,11 @@ a {
 
 .catalog-items-list {
  display: flex;
+ justify-content: space-between;
  position: relative;
 }
+
+
 
 .catalog-item  {
   list-style: none;
@@ -272,6 +315,13 @@ a {
   background-color: rgba(240, 197, 46, 0.5);
 }
 
+.catalog-items {
+  min-width: 1200px;
+  min-height: 243px;
+  margin-right: 140px;
+  margin-left: 140px;
+  margin-bottom: 80px;
+}
 
 .catalog-item:hover {
   background-color: rgba(240, 197, 46, 1);
@@ -319,16 +369,31 @@ a {
 }
                   /*   Слайдер Сервисов   */
 
+.wrapper-services {
+  background-size: cover 288px;
+  background-color: #e5e5e5;
+  background-repeat: no-repeat;
+  margin-bottom: 95px;
+}
+
+.services-data {
+  display: flex;
+  min-width: 1160px;
+  min-height: 388px;
+  margin-right: 140px;
+  margin-left: 140px;
+}
+
 .services-data-controls {
   text-transform: uppercase;
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  width: 280px;
 }
 
-.services-data-feature {
-  width: 1440px;
-  height: 288px;
-  background-color: #e5e5e5;
-  background-repeat: no-repeat;
+.services-data-control {
+  min-width: 280px;
 }
 
 .services-data-feature-headline {
@@ -343,10 +408,15 @@ a {
   line-height: 30px;
 }
 
+.services-data-feature {
+  width: 500px;
+  min-height: 250px;
+}
+
 .delivery {
   background-image: url(../img/delivery.svg);
   background-repeat: no-repeat;
-  background-position: right 206px bottom 139px;
+  background-position: right -20px bottom 139px;
 }
 
 .warranty {
@@ -361,15 +431,26 @@ a {
   background-position: right 210px bottom 141px;
 }
                    /*   Блок  бренды  */
+                   .
+.brends {
+  margin-bottom: 95px;
+}
+
 .brend-items {
   display: flex;
+  justify-content: space-between;
   list-style: none;
+  min-width: 1160px;
+  min-height: 100px;
+  margin-right: 143px;
+  margin-left: 140px;
 }
 
 .brend-item {
   opacity: 0.2;
   filter: grayscale(1); /* (Жаль не работает в IE11) это временное решение  */
   list-style: none;
+
 }
 
 .brend-item:hover {
@@ -381,6 +462,19 @@ a {
 
 .shop-data {
   display: flex;
+  margin-left: 120px;
+  margin-right: 120px;
+  margin-bottom: 92px;
+}
+
+.shop-data-about-us {
+  min-width: 480px;
+}
+
+.shop-data-contacts {
+  min-width: 580px;
+  margin-right: 20px;
+
 }
 
 .shop-data-about-us,
@@ -390,6 +484,8 @@ a {
   font-size: 15px;
   font-weight: 300;
   line-height: 30px;
+  margin-left: 20px;
+  margin-right: 100px;
 }
 
 .shop-data-about-us-headline,
@@ -422,6 +518,7 @@ a {
   list-style: none;
 }
 
+.catalog-content,
 .catalog-items-pagination,
 .catalog-content-items,
 .catalog-content-filter,
@@ -437,6 +534,8 @@ a {
   font-weight: 700;
   line-height: 48px;
   letter-spacing: 0.01em;
+  margin-left: 200px;
+  margin-bottom: 25px;
 }
                      /*  Хлебные крошки   */
 .breadcrumbs {
@@ -447,6 +546,9 @@ a {
   font-weight: 300;
   opacity: 0.3;
   color: #000000;
+  display: flex;
+  margin-left: 200px;
+  margin-bottom: 50px;
 }
 
 .breadcrumbs:hover {
@@ -456,9 +558,14 @@ a {
 .breadcrumbs:active {
   opacity: 0.1;
 }
+
+.breadcrumbs-link {
+  margin-right: 20px;
+}
                     /* Фильтр товаров  */
 .catalog-top {
   display: flex;
+
 }
 
 .catalog-top-filter {
@@ -471,6 +578,7 @@ a {
 .catalog-top-sorting {
   background-color: #ebebeb;
   min-height: 70px;
+  flex-grow: 1;
 }
 
 .catalog-top-sorting-link.checked {
@@ -494,10 +602,6 @@ a {
   opacity: 1;
 }
 
-.catalog-content-filter {
-  background-color: #efefef;
-}
-
 .catalog-top-filter-headline,
 .catalog-top-sorting-headline {
   font-family: "Gilroy", Arial, Helvetica, sans-serif;
@@ -507,7 +611,30 @@ a {
   text-transform: uppercase;
   letter-spacing: 0.2em;
 }
+
+.catalog-top-filter-headline {
+  margin-left: 200px;
+}
+
+.catalog-top-sorting-headline {
+  margin-left: 72px;
+}
+
                /*  Фильтр - чекбоксы  */
+
+.catalog-content-filter {
+  background-color: #efefef;
+  flex-basis: 468px;
+  width: 468px;  /* не понимаю почему не отрабатывает
+  и flex-basis то же не пашет */
+  min-height: 1217px;
+}
+
+.catalog-content-filter-form {
+  padding-top: 70px;
+  margin-left: 200px;
+}
+
 .catalog-filter-box,
 .catalog-filter-radio {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
@@ -539,10 +666,19 @@ a {
 
                /*  Каталог товаров интернет магазина Device  */
 
+.catalog-content-items {
+  min-width: 850px;
+  min-height: 1217px;
+  margin-left: 172px;
+  flex-wrap: wrap;
+}
+
+
 .catalog-content-item {
   min-width: 360px;
   min-height: 470px;
-
+  margin-left: 40px;
+  margin-top: 69px;
 }
 
 .catalog-content-item:hover {
@@ -568,6 +704,16 @@ a {
 }
                /* Пагинация страниц каталога */
 
+.catalog-pagination {
+  min-width: 760px;
+  min-height: 70px;
+  background-color: #ebebeb;
+  margin-bottom: 78px;
+  margin-left: 42px;
+
+}
+
+
 .catalog-items-pagination {
   font-family: "Gilroy", Arial, Helvetica, sans-serif;
   color: #000000;
@@ -577,6 +723,8 @@ a {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+  display: flex;
+  justify-content: space-around;
 }
 
 .catalog-items-page-number {
@@ -611,6 +759,11 @@ a {
 .main-footer-middle-features,
 .main-footer-social-list {
   display: flex;
+}
+
+.wrapper-footer {
+  margin-left: 120px;
+  margin-right: 120px;
 }
 
 .main-footer-logo:hover {
@@ -710,8 +863,8 @@ a {
 }
 
 .write-to-us {
-  min-width: 960px;
-  min-height: 553px;
+  width: 960px;
+  height: 553px;
   margin: 0 auto;
 }
 
@@ -752,8 +905,8 @@ a {
                   /* Попап  Карта с нашим адресом  */
 
 .map-pop-up {
-  min-width: 960px;
-  min-height: 559px;
+  width: 960px;
+  height: 559px;
   margin: 0 auto;
 }
 

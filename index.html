@@ -8,11 +8,12 @@
     </head>
     <body>
     <header class="main-header container header-container">
-        <div class="wrapper">
+
             <nav class="main-nav">
                 <a class="main-nav-logo">
                     <img src="img/logo.png" width="164" height="36" alt="Логотип интернет магазина Девайс">
                 </a>
+        <div class="wrapper">
             <div class="main-nav-wrapper">
                 <div class="main-nav-search">
                     <form class="main-nav-search-form" action="https://echo.htmlacademy.ru" method="post">
@@ -162,6 +163,7 @@
                 </div>
             </div>
         </div>
+
         <div class="catalog-items" aria-label="Разделы каталога интернет магазина Девайс">
             <ul class="catalog-items-list">
                 <li class="catalog-item item-1">
@@ -196,42 +198,44 @@
                 </li>
             </ul>
         </div>
-        <section class="services-data">
-            <h2 class="visually-hidden">Услуги интернет магазина Device</h2>
-            <div class="service-data-controls">
-            <input class="visually-hidden" type="radio" id="service-1" name="toggle-service" checked>
-            <input class="visually-hidden" type="radio" id="service-2" name="toggle-service">
-            <input class="visually-hidden" type="radio" id="service-3" name="toggle-service">
-            <div class="services-data-controls">
-                <label class="btn-decor-yellow" for="service-1" tabindex="0">Доставка</label>
-                <label class="btn-decor-yellow" for="service-2" tabindex="0">Гарантия</label>
-                <label class="btn-decor-yellow" for="service-3" tabindex="0">Кредит</label>
-            </div>
-            </div>
-            <div class="services-data-features">
-                <article class="services-data-feature delivery">
-                    <h2 class="services-data-feature-headline">Доставка</h2>
-                    <p>Мы с удовольствием доставим ваш товар прямо к вашему
-                       подъезду совершенно бесплатно! Ведь мы неплохо
-                       заработаем, поднимая его на ваш этаж.
-                    </p>
-                </article>
-                <article class="services-data-feature warranty visually-hidden">
-                    <h2 class="services-data-feature-headline">Гарантия</h2>
-                    <p>Если из-за возгорания купленного у нас товара у вас сгорит
-                       дом — не переживайте, мы выдадим вам новый.
-                       Товар, не дом, конечно же.
-                    </p>
-                </article>
-                <article class="services-data-feature credit visually-hidden">
-                    <h2 class="services-data-feature-headline">Кредит</h2>
-                    <p>Залезть в долговую яму стало проще! Кредитные
-                       консультанты подберут для вас наиболее выгодные
-                       условия кредита. Выгодные для нашего банка, разумеется.
-                    </p>
-                </article>
-            </div>
-        </section>
+        <div class="wrapper-services">
+            <section class="services-data">
+                <h2 class="visually-hidden">Услуги интернет магазина Device</h2>
+                <div class="service-data-controls">
+                <input class="visually-hidden" type="radio" id="service-1" name="toggle-service" checked>
+                <input class="visually-hidden" type="radio" id="service-2" name="toggle-service">
+                <input class="visually-hidden" type="radio" id="service-3" name="toggle-service">
+                <div class="services-data-controls">
+                    <label class="btn-decor-yellow services-data-control" for="service-1" tabindex="0">Доставка</label>
+                    <label class="btn-decor-yellow services-data-control" for="service-2" tabindex="0">Гарантия</label>
+                    <label class="btn-decor-yellow services-data-control" for="service-3" tabindex="0">Кредит</label>
+                </div>
+                </div>
+                <div class="services-data-features">
+                    <article class="services-data-feature delivery">
+                        <h2 class="services-data-feature-headline">Доставка</h2>
+                        <p>Мы с удовольствием доставим ваш товар прямо к вашему
+                          подъезду совершенно бесплатно! Ведь мы неплохо
+                          заработаем, поднимая его на ваш этаж.
+                        </p>
+                    </article>
+                    <article class="services-data-feature warranty visually-hidden">
+                        <h2 class="services-data-feature-headline">Гарантия</h2>
+                        <p>Если из-за возгорания купленного у нас товара у вас сгорит
+                          дом — не переживайте, мы выдадим вам новый.
+                          Товар, не дом, конечно же.
+                        </p>
+                    </article>
+                    <article class="services-data-feature credit visually-hidden">
+                        <h2 class="services-data-feature-headline">Кредит</h2>
+                        <p>Залезть в долговую яму стало проще! Кредитные
+                          консультанты подберут для вас наиболее выгодные
+                          условия кредита. Выгодные для нашего банка, разумеется.
+                        </p>
+                    </article>
+                </div>
+            </section>
+        </div>
         <div class="brends">
             <ul class="brend-items">
                 <li>
@@ -295,6 +299,7 @@
         </div>
     </main>
     <footer class="main-footer container">
+      <div class="wrapper-footer">
         <a class="main-footer-logo">
             <img src="img/logo-footer.png" width="163" height="36" alt="Логотип интернет магазина Девайс">
         </a>
@@ -342,6 +347,7 @@
                 <a class="logo-html-academy" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Логотип HTML Academy">.</a>
             </p>
         </div>
+      </div>
     </footer>
         <div class="write-to-us pop-up-show "> <!-- visually-hidden  -->
             <button class="pop-up-close" id="write-to-us-pop-up-close" type="button" title="Закрыть" aria-label="Закрыть"></button>
