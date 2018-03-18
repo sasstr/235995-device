@@ -45,7 +45,7 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: "Gilroy", Arial, Helvetica, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
   color: #000000;
@@ -62,7 +62,7 @@ a {
 
 .header-container {
   position: relative;
-  min-width: 1160px;
+  width: 1160px;
   min-height: 300px;
   margin-top: 40px;
   margin-left: 140px;
@@ -145,7 +145,7 @@ a {
 }*/
 
 .main-nav-user-menu-link {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
   color: #000000;
@@ -199,7 +199,7 @@ a {
 }
 
 .main-nav-submenu-list-link {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   line-height: 36px;
   letter-spacing: 0.01em;
@@ -215,6 +215,12 @@ a {
 }
 
                   /*   Главный контент <Main>  */
+.main-container {
+  width: 1200px;
+  margin-left: 120px;
+  margin-right: 120px;
+}
+
 
                     /* Слайдер  */
 .slider-form {
@@ -225,14 +231,14 @@ a {
 .slider-item {
   width: 1069px;
   height: 486px;
-  margin-right: 140px;
-  margin-left: 230px;
+  margin-right: 20px;
+  margin-left: 110px;
   margin-bottom: 106px;
   margin-top: -60px; /* не удачная попытка наползти на слайдер  */
 }
 
 .slider-item-headline {
-  font-family: "Gilroy", Arial, Helvetica, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 47px;
   margin-left: 600px;
   line-height: 56px;
@@ -240,13 +246,12 @@ a {
 }
 
 .slider-item p {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
   letter-spacing: 0.01em;
   font-weight: 300;
   margin-left: 600px;
-
 }
 
 .slider-item a {
@@ -278,7 +283,7 @@ a {
 
 .slider-item-data-column
 .value {
-  font-family: "Gilroy", Arial, Helvetica, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 36px;
   line-height: 48px;
   letter-spacing: 0.01em;
@@ -290,7 +295,7 @@ a {
 .description {
   font-size: 13px;
   line-height: 20px;
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-weight: 300;
   letter-spacing: 0.01 em;
   color: #000000;
@@ -318,8 +323,8 @@ a {
 .catalog-items {
   min-width: 1200px;
   min-height: 243px;
-  margin-right: 140px;
-  margin-left: 140px;
+  margin-right: 20px;
+  margin-left: 20px;
   margin-bottom: 80px;
 }
 
@@ -367,21 +372,27 @@ a {
   background-repeat: no-repeat;
   background-position: center center;
 }
-                  /*   Слайдер Сервисов   */
+                  /*   Слайдер Сервисов    */
 
 .wrapper-services {
+  margin-bottom: 95px;
+}
+
+.wrapper-services::after {
+  position: absolute;
+  content: "";
   background-size: cover 288px;
   background-color: #e5e5e5;
   background-repeat: no-repeat;
-  margin-bottom: 95px;
+  top: 20px;
 }
 
 .services-data {
   display: flex;
   min-width: 1160px;
   min-height: 388px;
-  margin-right: 140px;
-  margin-left: 140px;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .services-data-controls {
@@ -431,26 +442,33 @@ a {
   background-position: right 210px bottom 141px;
 }
                    /*   Блок  бренды  */
-                   .
+
 .brends {
   margin-bottom: 95px;
 }
 
 .brend-items {
   display: flex;
-  justify-content: space-between;
   list-style: none;
   min-width: 1160px;
   min-height: 100px;
-  margin-right: 143px;
-  margin-left: 140px;
+  margin-right: 23px;
+  margin-left: 20px;
 }
 
 .brend-item {
+  margin-right: 40px;
   opacity: 0.2;
   filter: grayscale(1); /* (Жаль не работает в IE11) это временное решение  */
   list-style: none;
+}
 
+.brend-item:nth-child(3) {
+  margin-right: 37px;
+}
+
+.brend-item:last-child {
+  margin-right: 0;
 }
 
 .brend-item:hover {
@@ -462,17 +480,17 @@ a {
 
 .shop-data {
   display: flex;
-  margin-left: 120px;
-  margin-right: 120px;
+  margin-left: 20px;
+  margin-right: 20px;
   margin-bottom: 92px;
 }
 
 .shop-data-about-us {
-  min-width: 480px;
+  width: 480px;
 }
 
 .shop-data-contacts {
-  min-width: 580px;
+  width: 580px;
   margin-right: 20px;
 
 }
@@ -480,7 +498,7 @@ a {
 .shop-data-about-us,
 .shop-data-contacts p {
   color: #464646;
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   font-weight: 300;
   line-height: 30px;
@@ -490,7 +508,7 @@ a {
 
 .shop-data-about-us-headline,
 .shop-data-contacts-headline {
-  font-family: "Gilroy", Arial, Helvetica, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   color: #000000;
   font-size: 47px;
   font-weight: 700;
@@ -499,7 +517,7 @@ a {
 }
 
 .delivery-vendors {
-  font-family: "Gilroy", Arial, Helvetica, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   color: #000000;
   font-size: 16px;
   font-weight: 700;
@@ -521,14 +539,13 @@ a {
 .catalog-content,
 .catalog-items-pagination,
 .catalog-content-items,
-.catalog-content-filter,
 .catalog-top-sorting-list,
 .catalog-top-sorting {
   display: flex;
 }
 
 .page-headline {
-  font-family: "Gilroy", Arial, Helvetica, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   color: #000000;
   font-size: 47px;
   font-weight: 700;
@@ -539,7 +556,7 @@ a {
 }
                      /*  Хлебные крошки   */
 .breadcrumbs {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.01em;
@@ -578,7 +595,7 @@ a {
 .catalog-top-sorting {
   background-color: #ebebeb;
   min-height: 70px;
-  flex-grow: 1;
+  flex-grow: 1; /**/
 }
 
 .catalog-top-sorting-link.checked {
@@ -587,7 +604,7 @@ a {
 
 .catalog-top-sorting-link {
   color: #000000;
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 14px;
   font-weight: 300;
   line-height: 18px;
@@ -604,40 +621,43 @@ a {
 
 .catalog-top-filter-headline,
 .catalog-top-sorting-headline {
-  font-family: "Gilroy", Arial, Helvetica, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   color: #000000;
   font-weight: 700;
-  text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.2em;
 }
 
 .catalog-top-filter-headline {
-  margin-left: 200px;
+  padding-left: 200px;
 }
 
 .catalog-top-sorting-headline {
-  margin-left: 72px;
+  padding-left: 72px;
 }
 
                /*  Фильтр - чекбоксы  */
+.catalog-content-filter,
+.catalog-content-filter-form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
 
 .catalog-content-filter {
+  display: flex;
   background-color: #efefef;
-  flex-basis: 468px;
-  width: 468px;  /* не понимаю почему не отрабатывает
-  и flex-basis то же не пашет */
+  min-width: 468px;
   min-height: 1217px;
 }
 
 .catalog-content-filter-form {
-  padding-top: 70px;
-  margin-left: 200px;
+  padding-left: 200px;
 }
 
 .catalog-filter-box,
 .catalog-filter-radio {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 40px;
   letter-spacing: 0.01em;
@@ -667,18 +687,30 @@ a {
                /*  Каталог товаров интернет магазина Device  */
 
 .catalog-content-items {
-  min-width: 850px;
+  width: 890px;
   min-height: 1217px;
-  margin-left: 172px;
+  margin-left: 72px;
   flex-wrap: wrap;
 }
 
+.catalog-content-items:nth-child(n+3) {
+  margin-bottom: 37px;
+}
 
 .catalog-content-item {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction:column;
   min-width: 360px;
-  min-height: 470px;
+  min-height: 460px;
   margin-left: 40px;
-  margin-top: 69px;
+  margin-top: 50px;
+}
+
+.catalog-content-item-details {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction:column;
 }
 
 .catalog-content-item:hover {
@@ -687,18 +719,25 @@ a {
 
 .btn-to-cart:hover {
   opacity: 1;
+}
 
+.catalog-content-item-link {
+  font-family: "Gilroy", Arial, sans-serif;
+  color: #000000;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;;
+  letter-spacing: 0.01em;
 }
 
 .catalog-content-item-price {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.01em;
   font-weight: 300;
 }
 
-.catalog-content-item-link,
 .btn-to-compare {
   color: #000000;
 }
@@ -706,25 +745,30 @@ a {
 
 .catalog-pagination {
   min-width: 760px;
-  min-height: 70px;
+  height: 70px;
   background-color: #ebebeb;
   margin-bottom: 78px;
   margin-left: 42px;
-
 }
 
-
 .catalog-items-pagination {
-  font-family: "Gilroy", Arial, Helvetica, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   color: #000000;
   font-size: 16px;
   line-height: 24px;
   font-weight: 700;
-  text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.2em;
   display: flex;
   justify-content: space-around;
+}
+
+.catalog-items-direction:last-child,
+.catalog-items-direction:first-child {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 16px;
+  padding-bottom: 25px;
 }
 
 .catalog-items-page-number {
@@ -750,7 +794,6 @@ a {
   opacity: 0.3;
 }
 
-
           /*   Подвал контент <Footer>*/
 
 .main-footer-middle,
@@ -762,6 +805,7 @@ a {
 }
 
 .wrapper-footer {
+  width: 1200px;
   margin-left: 120px;
   margin-right: 120px;
 }
@@ -775,7 +819,7 @@ a {
 }
 
 .main-footer-user-menu-link {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   line-height: 36px;
   letter-spacing: 0.01em;
@@ -792,6 +836,8 @@ a {
 }
 
 .main-footer {
+  min-height: 323px;
+  min-width: 1440px;
   background-color: #464646;
   color: #ffffff;
 }
@@ -855,7 +901,7 @@ a {
 
                    /*  Попап Напишите нам  */
 .pop-up-label-value {
-  font-family: "Gilroy", Arial, Helvetica, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   color: #000000;
   font-size: 18px;
   line-height: 24px;
@@ -864,20 +910,79 @@ a {
 
 .write-to-us {
   width: 960px;
-  height: 553px;
+  min-height: 553px;
   margin: 0 auto;
 }
 
+.write-to-us-form {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 760px;
+  min-height: 270px;
+  margin-bottom: 40px;
+}
+
+.pop-up-text {
+  min-width: 360px;
+  min-height: 50px;
+  margin-bottom: 64px;
+}
+
+.write-to-us-item-email .pop-up-text,
+.write-to-us-item-email .pop-up-label-value {
+  margin-left: 40px;
+}
+
+.pop-up-textarea {
+  min-width: 760px;
+  min-height: 156px;
+}
+
+.pop-up-text,
+.pop-up-textarea {
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.pop-up-text:hover,
+.pop-up-textarea:hover {
+  background-color: #eaeaea;
+  border: none;
+}
+
+.pop-up-text:focus,
+.pop-up-textarea:focus {
+  background-color: #ffffff;
+  outline-color: #f0c52e;
+  outline-width: 3px;
+  outline-offset: -3px;
+}
+
+.pop-up-text:valid,
+.pop-up-textarea:valid {
+  background-color: rgba(237, 181, 181, 0.5);
+}
+
+.pop-up-label-value {
+  display: block;
+  margin-bottom: 10px;
+}
+
+
 .write-to-us-form-item input::placeholder {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
+  padding-left: 20px;
+  padding-top: 17px;
 }
 
 .write-to-us-form-item textarea::-webkit-input-placeholder {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
+  padding-left: 20px;
+  padding-top: 17px;
 }
 
 .pop-up-close {
@@ -906,9 +1011,11 @@ a {
 
 .map-pop-up {
   width: 960px;
-  height: 559px;
+  min-height: 559px;
   margin: 0 auto;
 }
+
+
 
                         /*  Служебные классы  */
 
@@ -920,6 +1027,14 @@ a {
   text-transform: uppercase;
   letter-spacing: 0.2em;
   border: none;
+  display: inline-block;
+  width: 200px;
+  height: 40px;
+  background-image: linear-gradient(transparent 40%, rgba(240, 197, 46, 1) 40%, rgba(240, 197, 46, 1) 60%, transparent 60%);
+}
+
+.filter-btn {
+  background-color: #efefef;
 }
 
 .btn-decor-yellow:hover {
@@ -929,9 +1044,8 @@ a {
 }
 
 .btn-decor-yellow:active  {
-  color: #000000;
+  color: rgba(0, 0, 0, 0.3);
   background-color: #f0c52e;
-  opacity: 0.3;
   letter-spacing: 0.2em;
 }
 

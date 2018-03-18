@@ -84,7 +84,7 @@
             </nav>
 
     </header>
-    <main class="container">
+    <main class="main-container">
         <h1 class="visually-hidden">Интернет-магазин "Device" это огромный выбор интересных девайсов</h1>
         <div class="slider">
             <div class="slider-form">
@@ -203,9 +203,9 @@
             <section class="services-data">
                 <h2 class="visually-hidden">Услуги интернет магазина Device</h2>
                 <div class="service-data-controls">
-                <input class="visually-hidden" type="radio" id="service-1" name="toggle-service" checked>
-                <input class="visually-hidden" type="radio" id="service-2" name="toggle-service">
-                <input class="visually-hidden" type="radio" id="service-3" name="toggle-service">
+                    <input class="visually-hidden" type="radio" id="service-1" name="toggle-service" checked>
+                    <input class="visually-hidden" type="radio" id="service-2" name="toggle-service">
+                    <input class="visually-hidden" type="radio" id="service-3" name="toggle-service">
                 <div class="services-data-controls">
                     <label class="btn-decor-yellow services-data-control" for="service-1" tabindex="0">Доставка</label>
                     <label class="btn-decor-yellow services-data-control" for="service-2" tabindex="0">Гарантия</label>
@@ -299,7 +299,7 @@
             </div>
         </div>
     </main>
-    <footer class="main-footer container">
+    <footer class="main-footer  footer-container">
       <div class="wrapper-footer">
         <a class="main-footer-logo">
             <img src="img/logo-footer.png" width="163" height="36" alt="Логотип интернет магазина Девайс">
@@ -356,15 +356,15 @@
                 <div class="write-to-us-form">
                     <div class="write-to-us-form-item write-to-us-item-name">
                         <label class="pop-up-label-value" for="pop-up-name">Ваше имя:</label>
-                        <input id="pop-up-name" type="text" name="name" placeholder="Имя Фамилия" required>
+                        <input class="pop-up-text" id="pop-up-name" type="text" name="name" placeholder="Имя Фамилия" required>
                     </div>
                     <div class="write-to-us-form-item write-to-us-item-email">
                         <label class="pop-up-label-value" for="pop-up-email">Ваш e-mail:</label>
-                        <input id="pop-up-email" type="email" name="email" placeholder="email@example.com" required>
+                        <input class="pop-up-text" id="pop-up-email" type="email" name="email" placeholder="email@example.com" required>
                     </div>
                     <div class="write-to-us-form-item write-to-us-item-text">
                         <label class="pop-up-label-value" for="pop-up-text">Текст письма:</label>
-                        <textarea id="pop-up-text" name="message" placeholder="В свободной форме" maxlength="500" required></textarea>
+                        <textarea class="pop-up-textarea" id="pop-up-text" name="message" placeholder="В свободной форме" maxlength="500" required></textarea>
                     </div>
                 </div>
                 <button class="pop-up-submit btn-decor-yellow" type="submit" aria-label="Отправить форму обратной связи">Отправить</button>

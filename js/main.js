@@ -1,3 +1,40 @@
+/*  Открыть и закрыть попапы  */
+
+var writeToUsPopup = document.querySelector('.write-to-us');
+var btnWriteToUsPopupClose = document.querySelector('#write-to-us-pop-up-close');
+var btnSubmit = document.querySelector('.pop-up-submit');
+var btnWriteToUs = document.querySelector('.btn-write-us');
+var mapPopup = document.querySelector('.map-pop-up');
+var btnMapPopupClose = document.querySelector('#map-pop-up-close');
+var openMapPopup = document.querySelector('.shop-data-contacts-map-link');
+
+btnWriteToUs.addEventListener("click", function (event) {
+  event.preventDefault();
+  writeToUsPopup.classList.remove('visually-hidden');
+  }
+);
+
+openMapPopup.addEventListener("click", function (event) {
+  event.preventDefault();
+  mapPopup.classList.remove('visually-hidden');
+  }
+);
+
+btnWriteToUsPopupClose.addEventListener("click", function (event) {
+  event.preventDefault();
+  writeToUsPopup.classList.add("visually-hidden");
+  }
+);
+
+btnMapPopupClose.addEventListener("click", function (event) {
+  event.preventDefault();
+  mapPopup.classList.add("visually-hidden");
+  }
+);
+
+
+// Управление слайдерами
+
 var sliders = document.querySelectorAll( '.slider-item' );
 var radioButtonsSlider = document.querySelectorAll( '.slider-form input[type="radio"]' );
 var formRadioButtonsSlider = document.querySelectorAll( '.slider-form input' );
@@ -8,7 +45,7 @@ console.log(formRadioButtonsSlider);
 var servises = document.querySelectorAll( '.services-data-feature' );
 var radioButtonsServises = document.querySelectorAll( '.service-data-controls input[type="radio"]' );
 var formRadioButtonsServises = document.querySelectorAll( '.service-data-controls input[type="radio"]' );
-
+/*
 [].forEach.call(formRadioButtonsSlider, function(el){
   formRadioButtonsSlider.addEventListener("click", function(e){
   e.preventDefault();
@@ -37,44 +74,10 @@ window.onload  = function() {
      window.setTimeout(go, 3000);
   })();
 }
-
-/*  Открыть и закрыть попапы  */
-
-var writeToUsPopup = document.querySelector('.write-to-us');
-var btnWriteToUsPopupClose = document.querySelector('.write-to-us .pop-up-close');
-var btnSubmit = document.querySelector('.pop-up-submit');
-var btnWriteToUs = document.querySelector('.btn-write-us');
-var mapPopup = document.querySelector('.map-pop-up');
-var btnMapPopupClose = document.querySelector('.map-pop-up .pop-up-close');
-var openMapPopup = document.querySelector('.shop-data-contacts-map-link');
-
-btnWriteToUs.addEventListener("click", function (event) {
-  event.preventDefault();
-  writeToUsPopup.classList.remove('visually-hidden');
-  }
-);
-
-openMapPopup.addEventListener("click", function (event) {
-  event.preventDefault();
-  mapPopup.classList.remove('visually-hidden');
-  }
-);
-
-btnWriteToUsPopupClose.addEventListener("click", function (event) {
-  event.preventDefault();
-  writeToUsPopup.classList.add("visually-hidden");
-  }
-);
-
-btnMapPopupClose.addEventListener("click", function (event) {
-  event.preventDefault();
-  mapPopup.classList.add("visually-hidden");
-  }
-);
-
-
-
-/*if (i > sliders.length ) { i = sliders.length; }
+   */
+  
+/*
+if (i > sliders.length ) { i = sliders.length; }
 formRadioButtonsSlider.onclick = function(){
   for (var i = 0; i < sliders.length ; i++) {
     ( radioButtonsSlider[i].checked == false ) ? sliders[i].classList.add('visually-hidden') : sliders[i].classList.remove('visually-hidden');
