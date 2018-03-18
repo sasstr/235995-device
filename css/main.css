@@ -115,6 +115,11 @@ a {
   display: flex;
 }
 
+.main-nav-list,
+.main-nav-menu-list {
+-webkit-padding-start: 0;
+  }
+
 .main-nav-search-data {
   background-color: #f7e296;
   background-image: url(../img/search-header.svg);
@@ -567,6 +572,7 @@ a {
   list-style: none;
 }
 
+.main-nav-user-menu-list-item,
 .catalog-content,
 .catalog-items-pagination,
 .catalog-content-items,
