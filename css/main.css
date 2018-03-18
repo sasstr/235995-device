@@ -526,7 +526,6 @@ a {
 .shop-data-contacts {
   width: 580px;
   margin-right: 20px;
-
 }
 
 .shop-data-about-us,
@@ -622,22 +621,22 @@ a {
   -webkit-padding-start: 0px;
 }
 
-.breadcrumbs:hover {
+.breadcrumbs li:hover {
   opacity: 0.6;
 }
 
-.breadcrumbs:active {
+.breadcrumbs li:active {
   opacity: 0.1;
 }
 
 .breadcrumbs-link {
   margin-right: 20px;
+  color: #000000;
 }
                     /* Фильтр товаров  */
 .catalog-top {
   position: relative;
   display: flex;
-
 }
 
 .catalog-top-filter {
@@ -713,6 +712,51 @@ a {
 }
 
                /*  Фильтр - чекбоксы  */
+.catalog-content-controls {
+  position: relative;
+}
+
+.catalog-content-control-btn {
+  width: 25px;
+  height: 25px;
+  background-image: url(../img/filter-button.svg);
+  background-repeat: no-repeat;
+  background-size: 20px 23px;
+  background-color: transparent;
+  border: none;
+  z-index: 15;
+}
+
+.catalog-content-control-btn:active {
+  background-size: 23px 25px;
+}
+
+.control-btn-max {
+  margin-left: 100px;
+}
+
+.catalog-content-control-line {
+  position: absolute;
+  top: 9px;
+  width: 196px;
+  height: 2px;
+  background-color: #dbdbdb;
+  z-index: 1;
+}
+
+.active-control-line {
+  position: absolute;
+  right: 65px;
+  top: 0px;
+  width: 110px;
+  height: 2px;
+  background-color: #91c92f;
+}
+
+.catalog-content-max-value {
+  margin-left: 60px;
+}
+
 .container-inner {
   width: 1160px;
   padding-left: 140px;
@@ -896,6 +940,7 @@ a {
 
 .wrapper-footer {
   width: 1160px;
+  padding-top: 60px;
   padding-left: 140px;
   padding-right: 140px;
 }
