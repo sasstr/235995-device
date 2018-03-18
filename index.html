@@ -6,34 +6,37 @@
         <link rel="stylesheet" type="text/css" href="css/normalize.css" >
         <link rel="stylesheet" type="text/css" href="css/main.css" >
     </head>
-    <body>
+  <body>
     <header class="main-header container header-container">
-
+        <div class="header-wrapper">
             <nav class="main-nav">
-                <a class="main-nav-logo">
-                    <img src="img/logo.png" width="164" height="36" alt="Логотип интернет магазина Девайс">
-                </a>
-                <div class="wrapper">
-                    <div class="main-nav-wrapper">
-                        <div class="main-nav-search">
-                            <form class="main-nav-search-form" action="https://echo.htmlacademy.ru" method="post">
-                                <input class="main-nav-search-data" type="search" name="search" id="find" placeholder="Поиск по сайту">
-                                <label class="visually-hidden" for="find">Поиск по сайту</label>
-                                <input class="main-nav-search-btn" type="submit" value="Найти" >
-                            </form>
-                        </div>
-                        <ul class="main-nav-user-menu" >
-                            <li class="main-nav-user-menu-list-item login-link">
-                                <a class="main-nav-user-menu-link main-nav-enter" href="#" aria-label="Войти в личный кабинет интернет магазина Девайс">Войти</a>
-                            </li>
-                            <li class="main-nav-user-menu-list-item compare">
-                                <a class="main-nav-user-menu-link main-nav-compare-link" href="#" aria-label="Опция сравнения товаров интернет магазина Девайс">Сравнить</a>
-                            </li>
-                            <li class="main-nav-user-menu-list-item menu-cart" >
-                                <a class="main-nav-user-menu-link main-nav-cart-link" href="#" aria-label="Перейти в корзину интернет магазина Девайс">Корзина</a>
-                            </li>
+                    <a class="main-nav-logo">
+                      <img src="img/logo.png" width="164" height="36" alt="Логотип интернет магазина Девайс">
+                    </a>
+
+                        <ul class="main-nav-list">
+                          <li class="main-nav-search">
+                              <form class="main-nav-search-form" action="https://echo.htmlacademy.ru" method="post">
+                                  <input class="main-nav-search-data" type="search" name="search" id="find" placeholder="Поиск по сайту">
+                                  <label class="visually-hidden" for="find">Поиск по сайту</label>
+                                  <input class="main-nav-search-btn" type="submit" value="Найти" >
+                              </form>
+                          </li>
+                          <li class="main-nav-user-menu-list">
+                              <ul class="main-nav-user-menu" >
+                                  <li class="main-nav-user-menu-list-item login-link">
+                                      <a class="main-nav-user-menu-link main-nav-enter" href="#" aria-label="Войти в личный кабинет интернет магазина Девайс">Войти</a>
+                                  </li>
+                                  <li class="main-nav-user-menu-list-item compare">
+                                      <a class="main-nav-user-menu-link main-nav-compare-link" href="#" aria-label="Опция сравнения товаров интернет магазина Девайс">Сравнить</a>
+                                  </li>
+                                  <li class="main-nav-user-menu-list-item menu-cart" >
+                                      <a class="main-nav-user-menu-link main-nav-cart-link" href="#" aria-label="Перейти в корзину интернет магазина Девайс">Корзина</a>
+                                  </li>
+                              </ul>
+                          </li>
                         </ul>
-                      </div>
+
                         <ul class="main-nav-menu-list">
                             <li class="main-nav-menu-item ">
                                 <a class="main-nav-menu-item-link link-submenu" href="#">Каталог товаров</a>
@@ -80,11 +83,10 @@
                                 <a class="main-nav-menu-item-link" href="#">Контакты </a>
                             </li>
                         </ul>
-                </div>
             </nav>
-
+        </div>
     </header>
-    <main class="main-container">
+    <main class="main-container container">
         <h1 class="visually-hidden">Интернет-магазин "Device" это огромный выбор интересных девайсов</h1>
         <div class="slider">
             <div class="slider-form">
@@ -299,8 +301,8 @@
             </div>
         </div>
     </main>
-    <footer class="main-footer  footer-container">
-      <div class="wrapper-footer">
+    <footer class="main-footer footer-container">
+      <div class="wrapper-footer container">
         <a class="main-footer-logo">
             <img src="img/logo-footer.png" width="163" height="36" alt="Логотип интернет магазина Девайс">
         </a>
