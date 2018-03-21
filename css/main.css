@@ -241,6 +241,9 @@ a {
   list-style: none;
 }
 
+.main-nav-menu-item {
+  position: relative;
+}
 
 .main-nav-menu-item
 .main-nav-submenu {
@@ -262,11 +265,12 @@ a {
 .main-nav-menu-item:hover
 .main-nav-submenu {
   position: absolute;
-  top: 173px;
-  left: 20px;
+  top: 20px;
+  left: -60px;
   display: flex;
-  min-height: 129px;
+  min-height: 137px;
   width: 1120px;
+  padding-top: 32px;
   background-color:#f7e296;
   z-index: 5;
 }
@@ -274,6 +278,18 @@ a {
 .main-nav-menu-list {
   display: flex;
   padding-top: 30px;
+}
+
+.main-nav-menu-item:nth-child(1)::before {
+  position: absolute;
+  content: "";
+  background-image: url(../img/plus-catalog-header.svg);
+  background-repeat: no-repeat;
+  right: -25px;
+  top: 5px;
+  width: 16px;
+  height: 16px;
+  opacity: 0.3;
 }
 
 .main-nav-menu-item-link {
