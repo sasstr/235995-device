@@ -90,6 +90,7 @@ a {
 .header-wrapper,
 .inner-page {
   margin-bottom: 36px;
+  min-height: ;
 }
 
 .main-nav-logo {
@@ -108,7 +109,6 @@ a {
 
 .main-nav-user-menu {
   display: flex;
-  min-width: 1040px;
   min-height: 30px;
   flex-wrap: wrap;
 }
@@ -173,21 +173,8 @@ a {
   opacity: 0.3;
 }
 
-.main-nav-search-form {
-  width: 240px;
-  margin-right: 250px;
-}
-
-.main-nav-user-menu-list-item:first-child {
-  margin-right: 180px;
-}
-
 .main-nav-user-menu-list-item:nth-child(2) {
   margin-right: 20px;
-}
-
-.main-nav-user-menu-list-item {
-  width: 100px;
 }
 
 .main-nav-user-menu,
@@ -198,11 +185,13 @@ a {
   list-style: none;
 }
 
-.main-nav-menu-item .main-nav-submenu {
+.main-nav-menu-item
+.main-nav-submenu {
   display: none;
 }
 
-.main-nav-menu-item:hover .main-nav-submenu {
+.main-nav-menu-item:hover
+.main-nav-submenu {
   display: flex;
 }
 
@@ -214,8 +203,6 @@ a {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  margin-right: 240px;
-  width: 300px;
 }
 
 .main-nav-menu-item-link:hover {
@@ -589,7 +576,6 @@ wrapper-services-column-2 {
   margin-bottom: 95px;
 }
 
-
 .brend-items {
   display: flex;
   list-style: none;
@@ -646,7 +632,6 @@ wrapper-services-column-2 {
   font-weight: 300;
   line-height: 30px;
   margin-right: 140px;
-
 }
 
 .shop-data-about-us-headline,
@@ -717,12 +702,6 @@ wrapper-services-column-2 {
   position: relative;
 }
 
-.wrapper-heading-content {
-  width: 1040px;
-  padding-left: 60px;
-  padding-right: 60px;
-}
-
 .page-headline {
   font-family: "Gilroy", Arial, sans-serif;
   color: #000000;
@@ -731,6 +710,7 @@ wrapper-services-column-2 {
   line-height: 48px;
   letter-spacing: 0.01em;
   margin-bottom: 25px;
+  padding-left: 80px;
 }
                      /*  Хлебные крошки   */
 .breadcrumbs {
@@ -744,6 +724,7 @@ wrapper-services-column-2 {
   display: flex;
   margin-bottom: 50px;
   -webkit-padding-start: 0px;
+  padding-left: 80px;
 }
 
 .breadcrumbs li:hover {
@@ -758,22 +739,46 @@ wrapper-services-column-2 {
   margin-right: 20px;
   color: #000000;
 }
-                    /* Фильтр товаров  */
+                    /* Фильтр товаров - Сортировка */
+
 .catalog-top {
   position: relative;
   display: flex;
 }
 
+.catalog-top-column-1 {
+  display: flex;
+  justify-content: flex-end;
+  background-color:#dbdbdb;
+  flex-grow:1;
+}
+
+.catalog-top-column-2 {
+  background-color: #ebebeb;
+  flex-grow:1;
+}
+
+.catalog-top-wrapper {
+  display: flex;
+}
+
+.main-container-inner {
+  display: flex;
+}
+
 .catalog-top-filter {
+  display: block;
   background-color: #dbdbdb;
   min-width: 328px;
   min-height: 70px;
+  margin-right: 0 auto;
 }
 
 .catalog-top-sorting {
   background-color: #ebebeb;
   min-height: 70px;
-  flex-grow: 1; /**/
+  min-width: 852px;
+  margin-left: 0 auto;
 }
 
 .catalog-top-sorting-link.checked {
@@ -861,12 +866,6 @@ wrapper-services-column-2 {
   margin-left: 60px;
 }
 
-.container-inner {
-  width: 1160px;
-  padding-left: 140px;
-  padding-right: 140px;
-}
-
 .catalog-content-filter,
 .catalog-content-filter-form {
   display: flex;
@@ -875,7 +874,6 @@ wrapper-services-column-2 {
 }
 
 .catalog-content-filter {
-  display: flex;
   background-color: #efefef;
   min-width: 328px;
   min-height: 1217px;
@@ -914,12 +912,34 @@ wrapper-services-column-2 {
 }
 
 
-               /*  Каталог товаров интернет магазина Device  */
+       /*  Каталог товаров интернет магазина Device  */
+
+
+.catalog-content-wrapper{
+  display: flex;
+}
+
+.catalog-content-container {
+  display: block;
+}
+
+.catalog-content-column-1 {
+  display: flex;
+  flex-grow: 1;
+  background-color: #efefef; /*  #efefef */
+  justify-content: flex-end;
+}
+
+.catalog-content-column-2 {
+  flex-grow: 1;
+  background-color: #ffffff;
+}
 
 .catalog-content-items {
   width: 850px;
   min-height: 1217px;
   flex-wrap: wrap;
+  background-color: #ffffff;
 }
 
 .catalog-content-item:nth-child(n+3) {
@@ -954,8 +974,6 @@ wrapper-services-column-2 {
 .btn-to-cart:hover {
   opacity: 1;
 }
-
-
 
 .catalog-content-item-link {
   font-family: "Gilroy", Arial, sans-serif;
