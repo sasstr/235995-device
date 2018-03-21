@@ -64,10 +64,10 @@ a {
                          /*  Шапка  --Header-- */
 .main-nav {
   color: #000000;
-  padding-top: 50px;
+  padding-top: 34px;
   padding-left: 60px;
   padding-right: 60px;
-  padding-bottom: 88px;
+  padding-bottom: 165px;
   background-color: #f7e296;
 }
 
@@ -76,6 +76,7 @@ a {
   min-height: 300px;
   padding-left: 20px;
   padding-right: 20px;
+  margin-bottom: 481px;
 }
 
 
@@ -87,10 +88,9 @@ a {
   color: #000000;
 }
 
-.header-wrapper,
 .inner-page {
   margin-bottom: 36px;
-  min-height: ;
+  /*   min-height: ;    */
 }
 
 .main-nav-logo {
@@ -113,21 +113,82 @@ a {
   flex-wrap: wrap;
 }
 
+.main-nav-user-menu-link {
+  position: relative;
+}
+
+.main-nav-user-menu-link.main-nav-enter::after {
+  position: absolute;
+  content: "";
+  top: 8px;
+  left: -26px;
+  width: 15px;
+  height: 15px;
+  background-image: url(../img/user-header.svg);
+  background-repeat: no-repeat;
+}
+
+.main-nav-user-menu-link.main-nav-compare-link::after {
+  position: absolute;
+  content: "";
+  top: 11px;
+  left: -19px;
+  width: 15px;
+  height: 15px;
+  background-image: url(../img/compare-header.svg);
+  background-repeat: no-repeat;
+}
+
+.main-nav-user-menu-link.main-nav-cart-link::after {
+  position: absolute;
+  content: "";
+  top: 8px;
+  left: -19px;
+  width: 15px;
+  height: 15px;
+  background-image: url(../img/cart-header.svg);
+  background-repeat: no-repeat;
+}
+
+.main-nav-user-menu-list-item:nth-child(3)  {
+  margin-left: 58px;
+}
+
+.main-nav-user-menu-list-item:nth-child(2) {
+  margin-left: 235px;
+}
+
+.main-nav-user-menu-list-item:nth-child(1) {
+  padding-left: 0;
+}
+
+.main-nav-list {
+  align-items: baseline;
+  justify-content: space-between;
+}
+
 .main-nav-list,
 .main-nav-search-form {
   display: flex;
+  -webkit-margin-after: 0;
+  -webkit-margin-before: 0;
 }
 
 .main-nav-list,
 .main-nav-menu-list {
--webkit-padding-start: 0;
+  -webkit-padding-start: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-before: 0;
   }
 
 .main-nav-search-data {
+  position: relative;
   background-color: #f7e296;
+  padding-left: 40px;
+  border: none;
   background-image: url(../img/search-header.svg);
   background-repeat: no-repeat;
-  border: none;
+  background-position: 3px 50% ;
 }
 
 .main-nav-search-data:focus {
@@ -152,8 +213,7 @@ a {
 
 .main-nav-search-btn:active {
   background-color: #000000;
-  color: #ffffff;
-  opacity: 0.3;
+  color: rgba(255, 255, 255, 0.3);
   border: none;
 }
 
@@ -173,10 +233,6 @@ a {
   opacity: 0.3;
 }
 
-.main-nav-user-menu-list-item:nth-child(2) {
-  margin-right: 20px;
-}
-
 .main-nav-user-menu,
 .main-nav-menu-list,
 .main-nav-submenu,
@@ -185,18 +241,39 @@ a {
   list-style: none;
 }
 
+
 .main-nav-menu-item
 .main-nav-submenu {
   display: none;
 }
 
+.main-nav-menu-item:nth-child(2) {
+  margin-left: 312px;
+}
+
+.main-nav-menu-item:nth-child(3) {
+  margin-left: 33px;
+}
+
+.main-nav-menu-item:nth-child(4) {
+  margin-left: 110px;
+}
+
 .main-nav-menu-item:hover
 .main-nav-submenu {
+  position: absolute;
+  top: 173px;
+  left: 20px;
   display: flex;
+  min-height: 129px;
+  width: 1120px;
+  background-color:#f7e296;
+  z-index: 5;
 }
 
 .main-nav-menu-list {
   display: flex;
+  padding-top: 30px;
 }
 
 .main-nav-menu-item-link {
@@ -211,10 +288,6 @@ a {
 
 .main-nav-menu-item-link:active {
   opacity: 0.3;
-}
-
-.main-nav-submenu {
-  display: flex;
 }
 
 .main-nav-submenu-list-link {
@@ -233,7 +306,7 @@ a {
   opacity: 0.3;
 }
 
-                  /*   Главный контент <Main>  */
+         /*   Главная страница - контент <Main>  */
 
                     /* Слайдер  */
 .slider {
@@ -242,7 +315,7 @@ a {
 
 .slider-form {
   position: absolute;
-  top: 320px;
+  top: -270px;
   left: 1017px;
 }
 
@@ -254,7 +327,13 @@ a {
   margin-right: 0;
 }
 
+.slider-items {
+  position: relative;
+}
+
 .slider-item {
+  position: absolute;
+  top: -593px;
   width: 1069px;
   height: 486px;
   margin-right: 20px;
@@ -1317,3 +1396,21 @@ wrapper-services-column-2 {
   overflow: hidden;
 }
 
+/*
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}*/
