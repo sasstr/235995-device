@@ -1193,7 +1193,7 @@ wrapper-services-column-2 {
 }
 
 .main-footer-top {
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 
 .main-footer-logo:hover {
@@ -1290,6 +1290,7 @@ wrapper-services-column-2 {
 
 .main-footer-middle {
   justify-content: space-between;
+  margin-bottom: 40px;
 }
 
 .main-footer-user-menu,
