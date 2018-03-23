@@ -1406,12 +1406,16 @@ wrapper-services-column-2 {
 }
 
 .write-to-us {
-  position: relative;
+  position: fixed;
+  top: 20px;
+  left: 450px;
   width: 960px;
   min-height: 553px;  /* 553px 458 */
   margin: 0 auto;
   padding-top: 95px;
   box-shadow: 0 10px 20px rgba(4,6,6,0.2);
+  background-color: #fff;
+  background-repeat: no-repeat;
 }
 
 .write-to-us-form {
@@ -1519,7 +1523,9 @@ wrapper-services-column-2 {
                   /* Попап  Карта с нашим адресом  */
 
 .map-pop-up {
-  position: relative;
+  position: fixed;
+  top: 20px;
+  left: 450px;
   width: 960px;
   min-height: 559px;
   margin: 0 auto;
