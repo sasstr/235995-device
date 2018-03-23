@@ -349,12 +349,34 @@ a {
 
 .slider-form {
   position: absolute;
-  top: 320px;
+  top: 323px;
   left: 1017px;
+  z-index: 5;
 }
 
 .slider-toggle {
+  position: relative;
   margin-right: 15px;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: #ffffff;
+  border: 2px solid #818181;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#slider-3:checked ~ .slider-toggle.slider-3:before,
+#slider-2:checked ~ .slider-toggle.slider-2:before,
+#slider-1:checked ~ .slider-toggle.slider-1:before {
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 12px;
+  top: 0;
+  left: 0;
+  background-image: url(../img/slider-button.svg);
+  background-repeat: no-repeat;
 }
 
 .slider-toggle:last-child {
@@ -366,7 +388,6 @@ a {
 }
 
 .slider-item {
-  top: -593px;
   width: 1069px;
   height: 486px;
   margin-right: 20px;
@@ -641,6 +662,31 @@ wrapper-services-column-2 {
 }
 
 .btn-decor-yellow.services-data-control:active {
+  display: inline-flex;
+  color: #f7e184;
+  background-color: #000000;
+  background-image:none;
+  width: 278px;
+  padding-right: 80px;
+  align-items: center;
+  justify-content: center;
+}
+
+  /*  функционал слайдера на CSS  Доставка - Гаранития - Кредит  */
+
+.services-data-feature {
+  display: none;
+}
+
+#service-1:checked ~ .services-data-features .delivery,
+#service-2:checked ~ .services-data-features .warranty,
+#service-3:checked ~ .services-data-features .credit {
+  display:block;
+}
+
+#service-1:checked ~ .services-data-controls .services-data-control:nth-child(1),
+#service-2:checked ~ .services-data-controls .services-data-control:nth-child(2),
+#service-3:checked ~ .services-data-controls .services-data-control:nth-child(3) {
   display: inline-flex;
   color: #f7e184;
   background-color: #000000;
@@ -1116,51 +1162,11 @@ wrapper-services-column-2 {
   background-repeat: no-repeat;
 }
 
+#pink:checked  ~ .pink.catalog-filter-box::before,
+#red:checked  ~ .red.catalog-filter-box::before,
+#blue:checked  ~ .blue.catalog-filter-box::before,
+#white:checked  ~ .white.catalog-filter-box::before,
 #black:checked  ~ .black.catalog-filter-box::before {
-  position: absolute;
-  content: "";
-  width: 27px;
-  height: 23px;
-  top: 6px;
-  left: 0;
-  background-image: url(../img/checkbox-on.svg);
-  background-repeat: no-repeat;
-}
-
-#white:checked  ~ .white.catalog-filter-box::before {
-  position: absolute;
-  content: "";
-  width: 27px;
-  height: 23px;
-  top: 6px;
-  left: 0;
-  background-image: url(../img/checkbox-on.svg);
-  background-repeat: no-repeat;
-}
-
-#blue:checked  ~ .blue.catalog-filter-box::before {
-  position: absolute;
-  content: "";
-  width: 27px;
-  height: 23px;
-  top: 6px;
-  left: 0;
-  background-image: url(../img/checkbox-on.svg);
-  background-repeat: no-repeat;
-}
-
-#red:checked  ~ .red.catalog-filter-box::before {
-  position: absolute;
-  content: "";
-  width: 27px;
-  height: 23px;
-  top: 6px;
-  left: 0;
-  background-image: url(../img/checkbox-on.svg);
-  background-repeat: no-repeat;
-}
-
-#pink:checked  ~ .pink.catalog-filter-box::before {
   position: absolute;
   content: "";
   width: 27px;
@@ -1182,18 +1188,8 @@ wrapper-services-column-2 {
   background-repeat: no-repeat;
 }
 
+#btn-radio-no:checked ~ .radio-no.catalog-filter-radio::before,
 #btn-radio-yes:checked ~ .radio-yes.catalog-filter-radio::before {
-  position: absolute;
-  content: "";
-  width: 25px;
-  height: 25px;
-  top: 8px;
-  left: 0;
-  background-image: url(../img/radio-on.svg);
-  background-repeat: no-repeat;
-}
-
-#btn-radio-no:checked ~ .radio-no.catalog-filter-radio::before {
   position: absolute;
   content: "";
   width: 25px;
