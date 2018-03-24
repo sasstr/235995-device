@@ -401,16 +401,6 @@ a {
   left: 1px;
   border: 2px solid #818181;
   border-radius: 50%;
-  /*background-image: url(../img/slider-header-button.svg);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  display: inline-block;
-  width: 8px;
-  height: 8px;
-  background: #ffffff;
-  border: 2px solid #818181;
-  border-radius: 50%;
-  box-shadow: inset 0 0 1px 2px rgba(129,129,129, 1);*/
   cursor: pointer;
 }
 
@@ -1271,6 +1261,30 @@ wrapper-services-column-2 {
 
 .catalog-content-item:nth-child(n+3) {
   margin-bottom: 37px;
+}
+
+..catalog-content-item {
+  position: relative;
+}
+
+.catalog-content-item:nth-child(5)::after {
+  position: absolute;
+  content: "new";
+  width: 58px;   /*  что то как то сложно по центру ставиться */
+  height: 42px;
+  top: 29px;
+  right: 27px;
+  color: rgba(0, 0, 0,0.2);
+  text-align: center;
+  padding-top: 16px;
+  text-transform: uppercase;
+  border: 2px solid rgba(0, 0, 0,0.1);
+  border-radius: 50%;
+  background-color: transparent;
+  font-size: 14px;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.05em;
 }
 
 .catalog-content-item {
