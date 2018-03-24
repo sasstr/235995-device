@@ -33,8 +33,10 @@ btnMapPopupClose.addEventListener("click", function (event) {
 );
 
 
-// Управление слайдерами
 
+
+// Управление слайдерами
+/*
 var sliders = document.querySelectorAll( '.slider-item' );
 var radioButtonsSlider = document.querySelectorAll( '.slider-form input[type="radio"]' );
 var formRadioButtonsSlider = document.querySelectorAll( '.slider-form input' );
@@ -45,7 +47,7 @@ console.log(formRadioButtonsSlider);
 var servises = document.querySelectorAll( '.services-data-feature' );
 var radioButtonsServises = document.querySelectorAll( '.service-data-controls input[type="radio"]' );
 var formRadioButtonsServises = document.querySelectorAll( '.service-data-controls input[type="radio"]' );
-/*
+
 [].forEach.call(formRadioButtonsSlider, function(el){
   formRadioButtonsSlider.addEventListener("click", function(e){
   e.preventDefault();
@@ -75,7 +77,7 @@ window.onload  = function() {
   })();
 }
    */
-  
+
 /*
 if (i > sliders.length ) { i = sliders.length; }
 formRadioButtonsSlider.onclick = function(){
