@@ -221,6 +221,42 @@ a {
   background-position: 3px 50% ;
 }
 
+/*  Стилизация Placeholder-a в строке поиска */
+
+.main-nav-search-form input[type="search"]::-moz-placeholder {
+  opacity: 0.3;
+}
+
+.main-nav-search-form input[type="search"]::placeholder {
+  opacity: 0.3;
+}
+
+.main-nav-search-form input[type="search"]:-ms-input-placeholder {
+  opacity: 0.3;
+}
+
+.main-nav-search-form input[type="search"]:-webkit-input-placeholder {
+  opacity: 0.3;
+}
+
+/*  Стилизация Placeholder-a :HOVER */
+
+.main-nav-search-form input[type="search"]:hover::-moz-placeholder {
+  opacity: 0.6;
+}
+
+.main-nav-search-form input[type="search"]:hover::placeholder {
+  opacity: 0.6;
+}
+
+.main-nav-search-form input[type="search"]:hover:-ms-input-placeholder {
+  opacity: 0.6;
+}
+
+.main-nav-search-form input[type="search"]:hover:-webkit-input-placeholder {
+  opacity: 0.6;
+}
+
 .main-nav-search-data:focus {
   background-color: #f7e296;
   border: none;
@@ -1286,7 +1322,7 @@ wrapper-services-column-2 {
   margin-bottom: 37px;
 }
 
-..catalog-content-item {
+.catalog-content-item {
   position: relative;
 }
 
