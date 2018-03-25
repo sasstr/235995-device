@@ -26,9 +26,25 @@ btnWriteToUsPopupClose.addEventListener("click", function (event) {
   }
 );
 
+document.addEventListener("keyup", function (event) {
+  if (event.keyCode == 27){
+  event.preventDefault();
+  writeToUsPopup.classList.add("visually-hidden");
+    }
+  }
+);
+
 btnMapPopupClose.addEventListener("click", function (event) {
   event.preventDefault();
   mapPopup.classList.add("visually-hidden");
+  }
+);
+
+document.addEventListener("keyup", function (event) {
+  if (event.keyCode == 27){
+  event.preventDefault();
+  mapPopup.classList.add("visually-hidden");
+    }
   }
 );
 
