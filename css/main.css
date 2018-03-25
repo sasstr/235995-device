@@ -700,65 +700,118 @@ a {
 }
 
 .catalog-item-link {
+  box-sizing: border-box;
+  padding-top: 160px;
   position: relative;
+  display: block;
   color: #000000;
   letter-spacing: 0.01em;
   font-weight: 700;
   width: 160px;
   height: 160px;
   background-color: rgba(240, 197, 46, 0.5);
-
 }
 
 .catalog-item-link:hover {
   background-color: rgba(240, 197, 46, 1);
 }
 
-.catalog-item-link span{
-  position: absolute;
-  left: 1px;
-  top: 193px;
+.catalog-item-link span {
+  display: block;
+  height: 50px;
   width: 160px;
+  margin-top: 32px;
 }
 
+.item-link-1 span::before {
+  position: absolute;
+  content: "";
+  width: 160px;
+  height: 160px;
+  top: 0;
+  left: 0;
+  background-image: url(../img/popular-1.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.item-link-1 span:active::before,
+.item-link-2 span:active::before,
+.item-link-3 span:active::before,
+.item-link-4 span:active::before,
+.item-link-5 span:active::before,
+.item-link-6 span:active::before {
+  opacity: 0.3;
+}
+/*
 .item-1 .catalog-item-link {
   width: 160px;
   height: 160px;
   background-image: url(../img/popular-1.svg);
   background-repeat: no-repeat;
   background-position: center center;
-}
+}*/
 
-.item-2 {
+.item-link-2 span::before {
+  position: absolute;
+  content: "";
+  width: 160px;
+  height: 160px;
+  top: 0;
+  left: 0;
   background-image: url(../img/popular-2.svg);
   background-repeat: no-repeat;
   background-position: center 93%;
-
 }
 
-.item-3 {
+.item-link-3 span::before {
+  position: absolute;
+  content: "";
+  width: 160px;
+  height: 160px;
+  top: 0;
+  left: 0;
   background-image: url(../img/popular-3.svg);
   background-repeat: no-repeat;
   background-position: center center;
 }
 
-.item-4 {
+.item-link-4 span::before {
+  position: absolute;
+  content: "";
+  width: 160px;
+  height: 160px;
+  top: 0;
+  left: 0;
   background-image: url(../img/popular-4.svg);
   background-repeat: no-repeat;
   background-position: center center;
 }
 
-.item-5 {
+.item-link-5 span::before {
+  position: absolute;
+  content: "";
+  width: 160px;
+  height: 160px;
+  top: 0;
+  left: 0;
   background-image: url(../img/popular-5.svg);
   background-repeat: no-repeat;
   background-position: center center;
 }
 
-.item-6 {
+.item-link-6 span::before {
+  position: absolute;
+  content: "";
+  width: 160px;
+  height: 160px;
+  top: 0;
+  left: 0;
   background-image: url(../img/popular-6.svg);
   background-repeat: no-repeat;
   background-position: center center;
 }
+
                   /*   Слайдер Сервисов    */
 
 .wrapper-services {
