@@ -63,11 +63,11 @@ a {
 }
                          /*  Шапка  --Header-- */
 .main-nav {
-  color: #000000;
   padding-top: 34px;
   padding-left: 60px;
   padding-right: 60px;
   padding-bottom: 47px;
+  color: #000000;
   background-color: #f7e296;
 }
 
@@ -99,7 +99,6 @@ a {
   left: 80px;
 }
 
-
 .main-nav-logo-link:hover {
   opacity: 0.6;
 }
@@ -119,7 +118,6 @@ a {
 .main-nav-user-menu-link {
   position: relative;
 }
-
 
 .main-nav-user-menu-link.main-nav-enter::after {
   position: absolute;
@@ -266,6 +264,19 @@ a {
   outline: none;
   display: block;
 }
+
+/*
+.main-nav-search-data:focus::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 355px;
+  height: 2px;
+  top: 20px;
+  left: 0;
+  background-color: #000000;
+  outline: none;
+}*/
 
 .main-nav-search-data:focus + .main-nav-search-btn {
   border: 1px solid #000000 ;
@@ -649,29 +660,7 @@ a {
   padding: 0;
 }
 
-                       /*   Разделы каталога по категориям  */
-
-.catalog-items-list {
- display: flex;
- position: relative;
- margin: 0;
- padding: 0;
-}
-
-.catalog-item  {
-  list-style: none;
-  color: #000000;
-  letter-spacing: 0.01em;
-  font-weight: 700;
-  width: 160px;
-  height: 160px;
-  margin-right: 40px;
-  background-color: rgba(240, 197, 46, 0.5);
-}
-
-.catalog-item:last-child  {
-  margin-right: 0;
-}
+               /*   Разделы каталога по категориям  */
 
 .catalog-items {
   min-height: 243px;
@@ -680,13 +669,49 @@ a {
   margin-bottom: 78px;
 }
 
-.catalog-item:hover {
-  background-color: rgba(240, 197, 46, 1);
+.catalog-items-list {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  margin: 0;
+  padding: 0;
+ }
+
+.catalog-item {
+  width: 160px;
+  height: 160px;
+  list-style: none;
+  margin-right: 40px;
+}
+/*
+.catalog-item {
+  list-style: none;
+  color: #000000;
+  letter-spacing: 0.01em;
+  font-weight: 700;
+  width: 160px;
+  height: 160px;
+  margin-right: 40px;
+  background-color: rgba(240, 197, 46, 0.5);
+}*/
+
+.catalog-item:last-child  {
+  margin-right: 0;
 }
 
 .catalog-item-link {
-  color: #000000;
   position: relative;
+  color: #000000;
+  letter-spacing: 0.01em;
+  font-weight: 700;
+  width: 160px;
+  height: 160px;
+  background-color: rgba(240, 197, 46, 0.5);
+
+}
+
+.catalog-item-link:hover {
+  background-color: rgba(240, 197, 46, 1);
 }
 
 .catalog-item-link span{
@@ -696,7 +721,9 @@ a {
   width: 160px;
 }
 
-.item-1 {
+.item-1 .catalog-item-link {
+  width: 160px;
+  height: 160px;
   background-image: url(../img/popular-1.svg);
   background-repeat: no-repeat;
   background-position: center center;
