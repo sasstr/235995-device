@@ -1374,6 +1374,7 @@ wrapper-services-column-2 {
 
 .catalog-content-filter-form {
   padding-left: 60px;
+  padding-top: 60px;
 }
 
 .catalog-filter-box,
@@ -1387,7 +1388,10 @@ wrapper-services-column-2 {
 }
 
 .catalog-filter-headline {
+  padding: 0;
+  margin: 0;
   position: relative;
+  padding-top: 20px;
 }
 
 .catalog-filter-headline::before {
@@ -1854,7 +1858,6 @@ wrapper-services-column-2 {
 }
 
 .main-footer-middle-features:nth-child(2) a {
-  margin-left: 37px;
   margin-left: 33px;
 }
 
@@ -1899,6 +1902,8 @@ wrapper-services-column-2 {
   content: "";
   position: absolute;
   right: 0;
+  top: -13px;
+  left: -26px;
   width: 27px;
   height: 35px;
   background-image: url(../img/logo-html-footer.svg);
