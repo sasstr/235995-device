@@ -962,29 +962,31 @@ wrapper-services-column-2 {
   line-height: 48px;
 }
 
-.services-data-feature-headline p {
+.services-data-feature p {
   font-size: 15px;
   font-weight: 300;
   line-height: 30px;
 }
 
 .services-data-feature {
+  box-sizing: border-box;
   margin-left: 117px;
   padding-top: 33px;
-  width: 700px;
+  padding-right: 350px;
+  width: 770px;
   min-height: 250px;
 }
 
 .delivery {
   background-image: url(../img/delivery.svg);
   background-repeat: no-repeat;
-  background-position: right 11px bottom 34px;
+  background-position: right 72px bottom 0px;
 }
 
 .warranty {
   background-image: url(../img/warranty.svg);
   background-repeat: no-repeat;
-  background-position: right -11px bottom 34px;
+  background-position: right 53px bottom -7px;
 }
 
 .credit {
@@ -1035,6 +1037,7 @@ wrapper-services-column-2 {
   margin-bottom: 87px;
   margin-left: 20px;
   margin-right: 20px;
+  padding-top: 5px;
 }
 
 .shop-data-about-us {
@@ -1066,13 +1069,13 @@ wrapper-services-column-2 {
 
 .shop-data-contacts {
   position: relative;
-  width: 560px;
+  width: 542px;
   margin-right: 20px;
   padding-left: 80px;
 }
 
 .shop-data-contacts p {
-  margin-right: 140px;
+  
 }
 
 .shop-data-about-us,
