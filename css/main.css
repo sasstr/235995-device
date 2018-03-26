@@ -56,6 +56,41 @@ a {
   text-decoration: none;
 }
 
+            /*  Желтая кнопка */
+
+.btn-decor-yellow {
+  color: #000000;
+  font-weight: 700;
+  text-align: center;
+  font-family: "Gilroy", Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  border: none;
+  display: inline-block;
+ /* width: 200px; */
+  height: 40px;
+  cursor: pointer;
+  background-image: linear-gradient(transparent 40%, rgba(240, 197, 46, 1) 40%, rgba(240, 197, 46, 1) 60%, transparent 60%);
+}
+
+.filter-btn {
+  background-color: #efefef;
+}
+
+.btn-decor-yellow:hover {
+  color: #000000;
+  background-color: rgba(240, 197, 46, 1);
+  letter-spacing: 0.2em;
+  width: 200px;
+}
+
+.btn-decor-yellow:active  {
+  color: rgba(0, 0, 0, 0.3);
+  background-color: #f0c52e;
+  letter-spacing: 0.2em;
+  width: 200px;
+}
+
 .container {
   margin: 0 auto;
   width: 1200px;
@@ -848,8 +883,8 @@ wrapper-services-column-2 {
   text-align: center;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  margin-bottom: 25px;
+  align-content: center;
+  padding-bottom: 33px;
   width: 280px;
   margin-right: 7px;
   position: relative;
@@ -861,14 +896,14 @@ wrapper-services-column-2 {
   width: 7px;
   height: 319px;
   background-color: #000000;
-  left: 280px;
-  top: 10px;
+  left: 276px;
+  top: 0px;
 }
 
 .services-data-control {
   min-width: 280px;
+  align-content: center;
   margin-bottom: 25px;
-  align-items: center;
 }
 
 /*  Переопрееляем кнопку переключения слайдера */
@@ -894,7 +929,7 @@ wrapper-services-column-2 {
   background-color: #000000;
   background-image:none;
   width: 278px;
-  padding-right: 80px;
+  padding-right: 120px;
   align-items: center;
   justify-content: center;
 }
@@ -919,7 +954,7 @@ wrapper-services-column-2 {
   background-color: #000000;
   background-image:none;
   width: 278px;
-  padding-right: 80px;
+  padding-right: 120px;
   align-items: center;
   justify-content: center;
 }
@@ -946,7 +981,7 @@ wrapper-services-column-2 {
 .delivery {
   background-image: url(../img/delivery.svg);
   background-repeat: no-repeat;
-  background-position: right -20px bottom 139px;
+  background-position: right -0px bottom 139px;
 }
 
 .warranty {
@@ -1000,18 +1035,47 @@ wrapper-services-column-2 {
 
 .shop-data {
   display: flex;
-  margin-bottom: 92px;
+  margin-bottom: 87px;
   margin-left: 20px;
   margin-right: 20px;
 }
 
 .shop-data-about-us {
   width: 480px;
+  position: relative;
+  margin-right: 120px;
+}
+
+
+.shop-data-about-us::before {
+  position: absolute;
+  content: "";
+  width: 80px;
+  height: 7px;
+  top: -10px;
+  left: 0;
+  background-color: #000000;
+}
+
+.shop-data-contacts::before {
+  position: absolute;
+  content: "";
+  width: 80px;
+  height: 7px;
+  top: -10px;
+  left: 80px;
+  background-color: #000000;
 }
 
 .shop-data-contacts {
+  position: relative;
   width: 560px;
   margin-right: 20px;
+  padding-left: 80px;
+}
+
+.shop-data-contacts p {
+  margin-right: 140px;
 }
 
 .shop-data-about-us,
@@ -1021,7 +1085,6 @@ wrapper-services-column-2 {
   font-size: 15px;
   font-weight: 300;
   line-height: 30px;
-  margin-right: 140px;
 }
 
 .shop-data-about-us-headline,
@@ -1040,8 +1103,11 @@ wrapper-services-column-2 {
   font-size: 16px;
   font-weight: 700;
   line-height: 40px;
+  margin: 0;
+  padding: 0;
   padding-top: 44px;
-  padding-bottom: 32px;
+  padding-bottom: 48px;
+  padding-left: 15px;
   list-style-image: url(../img/slider-button.svg);
 }
 
@@ -1563,6 +1629,7 @@ wrapper-services-column-2 {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  width: 200px;
 }
 
 .btn-to-cart:hover {
@@ -1700,11 +1767,8 @@ wrapper-services-column-2 {
 
 .main-footer-user-menu {
   justify-content: space-between;
-  -webkit-padding-start: 0;
-}
-
-.main-footer-middle {
-  align-items: baseline;
+  margin: 0;
+  padding: 0;
 }
 
 .wrapper-footer {
@@ -1715,7 +1779,7 @@ wrapper-services-column-2 {
 }
 
 .main-footer-top {
-  margin-bottom: 15px;
+  margin-bottom: 33px;
 }
 
 .main-footer-logo-link:hover {
@@ -1812,7 +1876,8 @@ wrapper-services-column-2 {
 
 .main-footer-middle {
   justify-content: space-between;
-  margin-bottom: 40px;
+  align-items: baseline;
+  margin-bottom: 63px;
 }
 
 .main-footer-user-menu,
@@ -1834,6 +1899,11 @@ wrapper-services-column-2 {
 
 .main-footer-social-item:nth-child(2) {
   margin-left: 22px;
+}
+
+.main-footer-middle-features {
+  margin: 0;
+  padding: 0;
 }
 
 .main-footer-user-menu a,
@@ -1934,7 +2004,6 @@ wrapper-services-column-2 {
   transform: translate( -50%, -50%);
   width: 960px;
   min-height: 553px;  /* 553px 458 */
-
   padding-top: 95px;
   box-shadow: 0 10px 20px 10px rgba(4,6,6,0.2);
   background-color: #fff;
@@ -1973,6 +2042,8 @@ wrapper-services-column-2 {
 .pop-up-textarea {
   background-color: #f2f2f2;
   border: none;
+  padding-left: 20px;
+  padding-top: 17px;
 }
 
 .pop-up-text:hover,
@@ -2003,16 +2074,12 @@ wrapper-services-column-2 {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
-  padding-left: 20px;
-  padding-top: 17px;
 }
 
 .write-to-us-form-item textarea::-webkit-input-placeholder {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
-  padding-left: 20px;
-  padding-top: 17px;
 }
 
 .pop-up-close {
@@ -2058,36 +2125,7 @@ wrapper-services-column-2 {
 
                         /*  Служебные классы  */
 
-.btn-decor-yellow {
-  color: #000000;
-  font-weight: 700;
-  text-align: center;
-  font-family: "Gilroy", Arial, sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  border: none;
-  display: inline-block;
-  width: 200px;
-  height: 40px;
-  cursor: pointer;
-  background-image: linear-gradient(transparent 40%, rgba(240, 197, 46, 1) 40%, rgba(240, 197, 46, 1) 60%, transparent 60%);
-}
 
-.filter-btn {
-  background-color: #efefef;
-}
-
-.btn-decor-yellow:hover {
-  color: #000000;
-  background-color: rgba(240, 197, 46, 1);
-  letter-spacing: 0.2em;
-}
-
-.btn-decor-yellow:active  {
-  color: rgba(0, 0, 0, 0.3);
-  background-color: #f0c52e;
-  letter-spacing: 0.2em;
-}
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
