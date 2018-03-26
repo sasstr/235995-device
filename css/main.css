@@ -755,7 +755,7 @@ a {
   display: block;
   height: 50px;
   width: 160px;
-  margin-top: 32px;
+  padding-top: 32px;
 }
 
 .item-link-1 span::before {
@@ -855,9 +855,6 @@ a {
   z-index: -1;
 }
 
-
-
-
 .wrapper-services-column-1 {
   flex-grow: 1;
  /* background-color: #e5e5e5;
@@ -866,8 +863,8 @@ a {
 
 wrapper-services-column-2 {
   flex-grow: 1;
-  background-color: #e5e5e5;
-  background-repeat: no-repeat;
+ /* background-color: #e5e5e5;
+  background-repeat: no-repeat;*/
 }
 
 .services-data {
@@ -886,7 +883,7 @@ wrapper-services-column-2 {
   align-content: center;
   padding-bottom: 33px;
   width: 280px;
-  margin-right: 7px;
+  margin-right: 0;
   position: relative;
 }
 
@@ -981,19 +978,19 @@ wrapper-services-column-2 {
 .delivery {
   background-image: url(../img/delivery.svg);
   background-repeat: no-repeat;
-  background-position: right -0px bottom 139px;
+  background-position: right 11px bottom 34px;
 }
 
 .warranty {
   background-image: url(../img/warranty.svg);
   background-repeat: no-repeat;
-  background-position: right 186px bottom 133px;
+  background-position: right -11px bottom 34px;
 }
 
 .credit {
   background-image: url(../img/credit.svg);
   background-repeat: no-repeat;
-  background-position: right 210px bottom 141px;
+  background-position: right 11px bottom 34px;
 }
                    /*   Блок  бренды  */
 
