@@ -995,20 +995,31 @@ wrapper-services-column-2 {
   font-size: 47px;
   font-weight: 700;
   line-height: 48px;
-  mar
+  letter-spacing: 0.01em;
+  margin: 0;
+  padding: 0;
+  padding-top: 40px;
+  padding-left: 6px;
+  padding-bottom: 18px;
 }
 
 .services-data-feature p {
   font-size: 15px;
   font-weight: 300;
   line-height: 30px;
+  letter-spacing: 0.012em;
+  margin: 0;
+  padding: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 5px;
 }
 
 .services-data-feature {
   box-sizing: border-box;
   margin-left: 117px;
   padding-top: 33px;
-  padding-right: 350px;
+  padding-right: 340px;
   width: 770px;
   min-height: 250px;
 }
@@ -1016,19 +1027,19 @@ wrapper-services-column-2 {
 .delivery {
   background-image: url(../img/delivery.svg);
   background-repeat: no-repeat;
-  background-position: right 72px bottom 0px;
+  background-position: right 72px bottom 9px;
 }
 
 .warranty {
   background-image: url(../img/warranty.svg);
   background-repeat: no-repeat;
-  background-position: right 53px bottom -7px;
+  background-position: right 53px bottom 2px;
 }
 
 .credit {
   background-image: url(../img/credit.svg);
   background-repeat: no-repeat;
-  background-position: right 11px bottom 34px;
+  background-position: right 76px bottom 39px;
 }
                    /*   Блок  бренды  */
 
@@ -1123,7 +1134,28 @@ wrapper-services-column-2 {
   font-size: 15px;
   font-weight: 300;
   line-height: 30px;
-  letter-spacing: -0.01em;
+}
+
+.shop-data-contacts p {
+  letter-spacing: -0.015em;
+}
+
+.shop-data-about-us-info-1,
+.shop-data-about-us-info-2 {
+  margin: 0;
+  padding: 0;
+  min-width: 485px;
+}
+
+.shop-data-about-us-info-1 {
+  letter-spacing: -0.015em;
+  padding-top: 15px;
+  padding-bottom: 30px;
+}
+
+.shop-data-about-us-info-2 {
+  letter-spacing: -0.013em;
+  padding-bottom: 22px;
 }
 
 .shop-data-about-us-headline,
@@ -1142,22 +1174,6 @@ wrapper-services-column-2 {
 
 .shop-data-about-us-headline {
   padding-bottom: 28px;
-}
-
-.shop-data-about-us-info-1,
-.shop-data-about-us-info-2 {
-  margin: 0;
-  padding: 0;
-  min-width: 485px;
-}
-
-.shop-data-about-us-info-1 {
-  padding-top: 15px;
-  padding-bottom: 30px;
-}
-
-.shop-data-about-us-info-2 {
-  padding-bottom: 22px;
 }
 
 .delivery-vendors {
