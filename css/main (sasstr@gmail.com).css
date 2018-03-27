@@ -73,6 +73,12 @@ a {
   background-image: linear-gradient(transparent 40%, rgba(240, 197, 46, 1) 40%, rgba(240, 197, 46, 1) 60%, transparent 60%);
 }
 
+.filter-btn {
+  margin-top: 30px;
+  width: 200px;
+  background-color: #efefef;
+}
+
 .btn-decor-yellow:hover {
   color: #000000;
   background-color: rgba(240, 197, 46, 1);
@@ -1463,17 +1469,9 @@ wrapper-services-column-2 {
   position: relative;
 }
 
-.filter-btn {
-  margin-top: 32px;
-  width: 200px;
-  background-color: #efefef;
-}
-
 .catalog-content-control-btn {
-  box-sizing: border-box;
-  width: 20px;
-  height: 20px;
-  cursor: pointer;
+  width: 25px;
+  height: 25px;
   background-image: url(../img/filter-button.svg);
   background-repeat: no-repeat;
   background-size: 20px 23px;
@@ -1487,22 +1485,12 @@ wrapper-services-column-2 {
 }
 
 .control-btn-max {
-  margin-left: 80px;
-}
-
-.catalog-content-control-value {
-  font-family: "Gilroy", Arial, sans-serif;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0em;
-  font-weight: 300;
-  opacity: 0.2;
-  padding-bottom: 22px;
+  margin-left: 100px;
 }
 
 .catalog-content-control-line {
   position: absolute;
-  top: 10px;
+  top: -7px;
   left: 0;
   width: 196px;
   height: 2px;
@@ -1512,8 +1500,8 @@ wrapper-services-column-2 {
 
 .active-control-line {
   position: absolute;
-  right: 85px;
-  top: 0;
+  right: 65px;
+  top: 0px;
   width: 110px;
   height: 2px;
   background-color: #91c92f;
@@ -1560,6 +1548,13 @@ wrapper-services-column-2 {
   letter-spacing: 0.01em
 }
 
+.filter-headline-price {
+  padding-top: 20px;
+  padding-bottom: 42px;
+}
+
+
+
 .catalog-filter-headline::before {
   position: absolute;
   content: "";
@@ -1572,24 +1567,14 @@ wrapper-services-column-2 {
   background-position: 0 0;
 }
 
-.catalog-filter-headline {
-  padding-top: 20px;
-}
-
-.filter-headline-price {
-  padding-bottom: 25px;
-}
-
 .filter-headline-color {
-  padding-bottom: 20px;
-}
-
-.catalog-filter-box.pink {
-  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 22px;
 }
 
 .filter-headline-bluetoth {
-  padding-bottom: 17px;
+  padding-top: 40px;
+  padding-bottom: 15px;
 }
 
 .catalog-filter-box::before {
