@@ -1914,7 +1914,7 @@ wrapper-services-column-2 {
 }
 
 .main-footer-top {
-  margin-bottom: 30px;
+  margin-bottom: 23px;
 }
 
 .main-footer-logo {
@@ -2064,8 +2064,31 @@ wrapper-services-column-2 {
   opacity: 0.3;
 }
 
-.main-footer-middle-features:nth-child(2) a {
-  margin-left: 33px;
+.main-footer-middle-features {
+  min-width: 430px;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.main-footer-middle-phone {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #ffffff;
+  letter-spacing: -0.017em;
+  margin-left: 0 auto;
+  padding-left: 42px;
+}
+
+.main-footer-middle-address {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #ffffff;
+  letter-spacing: -0.017em;
+  margin-right: 0 auto;
 }
 
 .main-footer-user-menu-list {
