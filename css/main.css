@@ -215,6 +215,11 @@ a {
   margin-left: 234px;
 }
 
+.main-nav-user-menu-link.main-nav-compare-link-inner {
+  margin-left: 75px;
+}
+
+
 .main-nav-user-menu-list-item .main-nav-enter {
   padding-left: 0;
 }
@@ -374,8 +379,8 @@ main-nav-search-btn:not(:focus):not(:active) + .main-nav-search-btn::after {
   z-index: 5;
 }
 
-.main-nav-menu-item:hover
-.main-nav-submenu {
+.main-nav-menu-item:hover .main-nav-submenu,
+.main-nav-menu-item:focus .main-nav-submenu {
   display: flex;
   position: absolute;
   top: 20px;
@@ -1354,6 +1359,11 @@ wrapper-services-column-2 {
   margin: 0 0 0 auto;
   box-sizing: border-box;
 }
+/*
+.catalog-top-sorting-arrows {
+  width: 11px;
+  height: 10px;
+}*/
 
 .catalog-top-sorting-arrow-up {
   display: block;
@@ -1773,10 +1783,11 @@ wrapper-services-column-2 {
 }
 
 .catalog-content-item-options {
+  position: absolute;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  position: absolute;
   top: 171px;
   left: 81px;
 }
@@ -2192,7 +2203,6 @@ wrapper-services-column-2 {
 .logo-html-academy::after {
   content: "";
   position: absolute;
-  right: 0;
   top: -19px;
   left: -26px;
   width: 27px;
@@ -2235,15 +2245,15 @@ wrapper-services-column-2 {
 .write-to-us-form {
   display: flex;
   flex-wrap: wrap;
-  min-width: 760px;
+  min-width: 720px;
   min-height: 270px;
   margin-bottom: 40px;
   margin-left: 100px;
 }
 
 .pop-up-text {
-  min-width: 360px;
-  min-height: 50px;
+  min-width: 320px;
+  height: 18px;
   margin-bottom: 64px;
   font: inherit;
 }
@@ -2254,7 +2264,7 @@ wrapper-services-column-2 {
 }
 
 .pop-up-textarea {
-  min-width: 760px;
+  min-width: 720px;
   min-height: 156px;
   resize: none;
 }
@@ -2265,6 +2275,8 @@ wrapper-services-column-2 {
   border: none;
   padding-left: 20px;
   padding-top: 17px;
+  padding-bottom: 15px;
+  padding-right: 20px;
 }
 
 .pop-up-text:hover,
@@ -2346,6 +2358,12 @@ wrapper-services-column-2 {
 
 .map-pop-up iframe {
   border: none;
+}
+
+.map-image-no-js {
+  background-image: url(../img/map-big.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
                         /*  Служебные классы  */
