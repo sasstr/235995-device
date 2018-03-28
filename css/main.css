@@ -116,6 +116,16 @@ a {
   color: #000000;
 }
 
+.main-nav-user-menu,
+.main-nav-menu-list,
+.main-nav-submenu,
+.main-nav-submenu-list,
+.main-nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .header-wrapper.inner-page {
   min-height: 203px;
   margin-bottom: 0;
@@ -218,12 +228,6 @@ a {
 .main-nav-search-form {
   display: flex;
 }
-
-.main-nav-list,
-.main-nav-menu-list {
-  margin: 0;
-  padding: 0;
-  }
 
 .main-nav-search-btn {
   margin: 0;
@@ -353,23 +357,12 @@ a {
   opacity: 0.3;
 }
 
-.main-nav-user-menu,
-.main-nav-menu-list,
-.main-nav-submenu,
-.main-nav-submenu-list,
-.main-nav-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
 .main-nav-menu-item {
   position: relative;
 }
 
 .main-nav-menu-item
 .main-nav-submenu {
-/*   display: none;       display: flex;     */
   display: none;
   position: absolute;
   top: 20px;
@@ -383,10 +376,10 @@ a {
 
 .main-nav-menu-item:hover
 .main-nav-submenu {
+  display: flex;
   position: absolute;
   top: 20px;
   left: -60px;
-  display: flex;
   min-height: 143px;
   width: 1160px;
   padding-top: 25px;
@@ -394,31 +387,40 @@ a {
   z-index: 5;
 }
 
-.main-nav-menu-item:nth-child(2) {
-  margin-left: 322px;
+.main-nav-menu-item {
+  width: 130px;
 }
 
-.main-nav-menu-item:nth-child(3) {
-  margin-left: 33px;
+.nav-menu-submenu-item {
+  width: 52%;
 }
 
-.main-nav-menu-item:nth-child(4) {
-  margin-left: 107px;
-  margin-right: -4px;
+.nav-menu-item-delivery {
+  margin-right: 30px
 }
 
+.nav-menu-item-warranty {
+  margin-right: 0px
+}
+
+.nav-menu-item-contacts {
+  margin-left: auto;
+  margin-right: -12px;
+  box-sizing: border-box;
+}
 
 .main-nav-menu-list {
   display: flex;
   padding-top: 30px;
+  justify-content: space-between;
 }
 
-.main-nav-menu-item:nth-child(1) .main-nav-menu-item-link::before {
+.nav-menu-submenu-item .main-nav-menu-item-link::before {
   position: absolute;
   content: "";
   background-image: url(../img/plus-catalog-header.svg);
   background-repeat: no-repeat;
-  right: -27px;
+  right: 293px;
   top: 4px;
   width: 16px;
   height: 16px;
@@ -1263,6 +1265,14 @@ wrapper-services-column-2 {
   padding-left: 80px;
 }
 
+.breadcrumbs-item-2 {
+  margin-left: 15px;
+}
+
+.breadcrumbs-end {
+  margin-left: 15px;
+}
+
 .breadcrumbs-link {
   margin-right: 20px;
   color: rgba(0, 0, 0, 0.3)
@@ -1281,21 +1291,13 @@ wrapper-services-column-2 {
 }
 
 .breadcrumbs-link::after {
- /* position: absolute;
-  content: "";
-  width: 4px;
-  height: 7px;
-  top: 9px;
-  right: 8px;
-  background-image: url(../img/nav-arrow.svg);
-  background-repeat: no-repeat; */
   position: absolute;
   content: "";
   display: block;
-  top: 9px;
-  right: 8px;
-  width: 6px;
-  height: 6px;
+  top: 8px;
+  right: 5px;
+  width: 4px;
+  height: 4px;
   border-right: 1px solid #000000;
   border-bottom: 1px solid #000000;
   transform: rotate(-45deg);
@@ -1395,16 +1397,16 @@ wrapper-services-column-2 {
   opacity: 1;
 }
 
-.catalog-top-sorting-list li:nth-child(1) {
-  margin-left: 52px;
+.sorting-list-item-price {
+  margin-left: 49px;
 }
 
-.catalog-top-sorting-list li:nth-child(2) {
-  margin-left: 25px;
+.sorting-list-item-type {
+  margin-left: 28px;
 }
 
-.catalog-top-sorting-list li:nth-child(3) {
-  margin-left: 30px;
+.sorting-list-item-popularity {
+  margin-left: 33px;
 }
 
 .catalog-top-sorting {
@@ -1698,11 +1700,6 @@ wrapper-services-column-2 {
   padding-bottom: 76px;
 }
 
-/*
-.catalog-content-item:nth-child(n+3) {
-  margin-bottom: 37px;
-}*/
-
 .item-new::after {
   position: absolute;
   box-sizing: border-box;
@@ -1743,6 +1740,17 @@ wrapper-services-column-2 {
 
 .catalog-content-item:hover {
   opacity: 0.7;
+}
+
+.btn-to-compare {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 36px;
+  letter-spacing: 0.01em;
+  font-weight: 300;
+  opacity: 0.5;
+  color: #000000;
+  display: inline-block;
 }
 
 .btn-to-cart.btn-decor-yellow {
@@ -2254,8 +2262,6 @@ wrapper-services-column-2 {
 }
 
                         /*  Служебные классы  */
-
-
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
