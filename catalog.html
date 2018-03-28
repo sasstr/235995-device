@@ -145,9 +145,10 @@
                                                     <div class="catalog-content-control-line">
                                                         <div class="active-control-line"></div>
                                                     </div>
-                                                    <button class="catalog-content-control-btn control-btn-min" type="button" id="control-min" aria-label="Выбор с помощью фильтра минимального порога цены"></button>
-                                                    <button class="catalog-content-control-btn control-btn-max" type="button" id="control-max"  aria-label="Выбор с помощью фильтра максимального порога цены"></button>
-
+                                                    <div class="catalog-content-control-btn-box">
+                                                        <button class="catalog-content-control-btn control-btn-min" type="button" id="control-min" aria-label="Выбор с помощью фильтра минимального порога цены"></button>
+                                                        <button class="catalog-content-control-btn control-btn-max" type="button" id="control-max"  aria-label="Выбор с помощью фильтра максимального порога цены"></button>
+                                                    </div>
                                                     <div class="catalog-content-control-value">
                                                         <span class="catalog-content-min-value" aria-label="Порог минимальной цены">от 0</span>
                                                         <span class="catalog-content-max-value" aria-label="Порог максимальной цены">до 5000</span>
@@ -187,7 +188,7 @@
                                     <h2 class="visually-hidden">Каталог товаров интернет магазина Device</h2>
                                     <article class="catalog-content-item">
 
-                                        <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
+                                        <img class="catalog-content-item-image" src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
 
                                         <div class="catalog-content-item-options">
                                             <a class="btn-to-cart btn-decor-yellow" href="#">В корзину</a>
@@ -201,11 +202,12 @@
                                         </div>
                                     </article>
                                     <article class="catalog-content-item">
+                                        <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
                                         <div class="catalog-content-item-options">
                                             <a class="btn-to-cart btn-decor-yellow" href="#">В корзину</a>
                                             <a class="btn-to-compare" href="#">Добавить к сравнению</a>
                                         </div>
-                                        <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+
                                         <div class="catalog-content-item-details">
                                             <h3 class="catalog-content-item-headline">
                                                 <a class="catalog-content-item-link item-link-short" href="#">Профессиональная селфи-палка</a>
@@ -214,11 +216,12 @@
                                         </div>
                                     </article>
                                     <article class="catalog-content-item">
+                                        <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
                                         <div class="catalog-content-item-options">
                                             <a class="btn-to-cart btn-decor-yellow" href="#">В корзину</a>
                                             <a class="btn-to-compare" href="#">Добавить к сравнению</a>
                                         </div>
-                                        <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+
                                         <div class="catalog-content-item-details">
                                             <h3 class="catalog-content-item-headline">
                                                 <a class="catalog-content-item-link" href="#">Непотопляемая селфи-палка</a>
@@ -227,11 +230,12 @@
                                         </div>
                                     </article>
                                     <article class="catalog-content-item item-new">
+                                        <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
                                         <div class="catalog-content-item-options">
                                             <a class="btn-to-cart btn-decor-yellow" href="#">В корзину</a>
                                             <a class="btn-to-compare" href="#">Добавить к сравнению</a>
                                         </div>
-                                        <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+
                                         <div class="catalog-content-item-details">
                                             <h3 class="catalog-content-item-headline">
                                                 <a class="catalog-content-item-link" href="#">Селфи-палка «Следуй за мной»</a>
@@ -246,13 +250,13 @@
                                             </li>
                                             <li class="catalog-items-page-numbers">
                                                 <ul class="catalog-items-page-number-list">
-                                                    <li class="catalog-items-page-number active-number">
+                                                    <li class="catalog-items-page-number active-number page-number-1">
                                                         <a>1</a>
                                                     </li>
-                                                    <li class="catalog-items-page-number">
+                                                    <li class="catalog-items-page-number page-number-2">
                                                         <a href="#" aria-current="page"><span class="visually-hidden">Текущая страница:</span>2</a>
                                                     </li>
-                                                    <li class="catalog-items-page-number">
+                                                    <li class="catalog-items-page-number page-number-3">
                                                         <a href="#">3</a>
                                                     </li>
                                                 </ul>
@@ -272,7 +276,7 @@
 
       <footer class="main-footer footer-container">
           <div class="wrapper-footer container">
-              <div class="main-footer-top">
+              <div class="main-footer-top main-footer-top-inner-page">
                   <ul class="main-footer-user-menu">
                       <li>
                           <a class="main-footer-logo-link" href="index.html">
@@ -295,7 +299,7 @@
                       </li>
                   </ul>
               </div>
-              <div class="main-footer-middle">
+              <div class="main-footer-middle main-footer-middle-inner-page">
                   <span class="main-footer-middle-address">г. Москва, ул. Строителей, 15</span>
                   <ul class="main-footer-middle-features">
                       <li>
@@ -310,7 +314,7 @@
                   </ul>
                   <span class="main-footer-middle-phone">Тел.: +7 (495) 495-95-95</span>
               </div>
-              <div class="main-footer-bottom">
+              <div class="main-footer-bottom main-footer-bottom-inner-page">
               <div class="main-footer-social">
                 <ul class="main-footer-social-list">
                   <li class="main-footer-social-item">
