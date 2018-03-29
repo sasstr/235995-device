@@ -669,7 +669,7 @@ main-nav-search-btn:not(:focus):not(:active) + .main-nav-search-btn::after {
   font-weight: 300;
   margin: 0;
   padding: 0;
-  margin-left: 510px;
+  margin-left: 511px;
   padding-right: 70px;
   padding-bottom: 43px;
 
@@ -678,7 +678,6 @@ main-nav-search-btn:not(:focus):not(:active) + .main-nav-search-btn::after {
 .btn-slider-more-info.btn-decor-yellow {
   display: inline-flex;
   margin-bottom: 48px;
-  margin-left: 4px;
   align-items: center;
   justify-content: center;
   width: 220px;
@@ -686,11 +685,11 @@ main-nav-search-btn:not(:focus):not(:active) + .main-nav-search-btn::after {
 
 .slider-item a {
   font-size: 18px;
-  margin-left: 510px;
+  margin-left: 512px;
 }
 
 .slider-item table {
-  margin-left: 509px;
+  margin-left: 508px;
 }
 
 .slider-item-data-column
@@ -1065,23 +1064,85 @@ wrapper-services-column-2 {
 .brend-item {
   display: block;
   margin-right: 40px;
-  opacity: 0.2;
-  filter: grayscale(1); /* (Жаль не работает в IE11) это временное решение  */
-  list-style: none;
 }
+/*
+  opacity: 0.2;
+  filter: grayscale(1);  (Жаль не работает в IE11) это временное решение
+  list-style: none;
+*/
 
-.brend-item.go-pro {
+.brend-item.brend-go-pro {
   margin-right: 37px;
 }
 
-.brend-item.vive {
+.brend-item.brend-vive {
   margin-right: 0;
 }
 
+.brend-item-link {
+  position: relative;
+  display: block;
+  width: 260px;
+  height: 100px;
+}
+
+.brend-dji:hover::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 260px;
+  height: 100px;
+  top: 0;
+  left: 0;
+  background-image: url(../img/logo-1.jpg);
+  background-repeat: no-repeat;
+  z-index: 3;
+}
+
+.brend-spgadgets:hover::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 260px;
+  height: 100px;
+  top: 0;
+  left: 0;
+  background-image: url(../img/logo-2.jpg);
+  background-repeat: no-repeat;
+  z-index: 3;
+}
+
+.brend-go-pro:hover::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 260px;
+  height: 100px;
+  top: 0;
+  left: 0;
+  background-image: url(../img/logo-3.jpg);
+  background-repeat: no-repeat;
+  z-index: 3;
+}
+
+.brend-vive:hover::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 260px;
+  height: 100px;
+  top: 0;
+  left: 0;
+  background-image: url(../img/logo-4.jpg);
+  background-repeat: no-repeat;
+  z-index: 3;
+}
+
+/*
 .brend-item:hover {
   opacity: 1;
-  filter: grayscale(0); /*  ( Жаль не работает в IE11 ) думаю может сделать спрайтом ?  */
-}
+  filter: grayscale(0);   ( Жаль не работает в IE11 ) думаю может сделать спрайтом ?
+} */
 
                       /* О нас и Контакты  */
 
@@ -1224,8 +1285,8 @@ wrapper-services-column-2 {
 
 .shop-data-contacts-map-link {
   display: block;
-  padding-bottom: 63px;
-  padding-left: 3px;
+  margin-bottom: 63px;
+  margin-left: 3px;
 }
 
                 /* Вторая страница  catalog.html */
@@ -1788,8 +1849,13 @@ wrapper-services-column-2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  top: 171px;
-  left: 81px;
+  width: 360px;
+  height: 379px;
+  background: rgba(255, 255, 255, 0.3);
+  top: 0;
+  left: 0;
+  padding-top: 23px;
+  padding-right: 3px;
 }
 
 .catalog-content-item-details {
