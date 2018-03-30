@@ -2106,7 +2106,7 @@ wrapper-services-column-2 {
   font-weight: 300;
 }
 
-.main-footer-user-menu-item:nth-child(1) .main-footer-user-menu-link::after {
+.main-footer-user-menu-item.login-link .main-footer-user-menu-link::after {
   position: absolute;
   content: "";
   width: 13px;
@@ -2117,7 +2117,7 @@ wrapper-services-column-2 {
   background-repeat: no-repeat;
 }
 
-.main-footer-user-menu-item:nth-child(2) .main-footer-user-menu-link::after {
+.main-footer-user-menu-item.compare .main-footer-user-menu-link::after {
   position: absolute;
   content: "";
   width: 13px;
@@ -2128,7 +2128,7 @@ wrapper-services-column-2 {
   background-repeat: no-repeat;
 }
 
-.main-footer-user-menu-item:nth-child(3) .main-footer-user-menu-link::after {
+.main-footer-user-menu-item.cart .main-footer-user-menu-link::after {
   position: absolute;
   content: "";
   width: 13px;
@@ -2190,11 +2190,11 @@ wrapper-services-column-2 {
   align-content: center;
 }
 
-.main-footer-social-item:nth-child(3) {
+.main-footer-social-item.item-twitter {
   margin-left: 22px;
 }
 
-.main-footer-social-item:nth-child(2) {
+.main-footer-social-item.item-insta {
   margin-left: 22px;
 }
 
@@ -2282,6 +2282,7 @@ wrapper-services-column-2 {
   position: relative;
   margin: 0;
   padding: 0;
+  width: 29px;
 }
 
 .logo-html-academy::after {
@@ -2452,7 +2453,7 @@ wrapper-services-column-2 {
 
                         /*  Служебные классы  */
 
-.visually-hidden:not(:focus):not(:active),
+.visually-hidden,
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
   position: absolute;
