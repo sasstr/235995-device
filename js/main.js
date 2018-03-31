@@ -8,23 +8,28 @@ var mapPopup = document.querySelector('.map-pop-up');
 var btnMapPopupClose = document.querySelector('#map-pop-up-close');
 var openMapPopup = document.querySelector('.shop-data-contacts-map-link');
 
+if(btnWriteToUs)
 btnWriteToUs.addEventListener("click", function (event) {
-  event.preventDefault();
-  writeToUsPopup.classList.remove('visually-hidden');
-  }
-);
+    event.preventDefault();
 
+    writeToUsPopup.classList.remove('visually-hidden');
+    }
+  );
+
+if(openMapPopup)
 openMapPopup.addEventListener("click", function (event) {
   event.preventDefault();
   mapPopup.classList.remove('visually-hidden');
   }
 );
 
+if(btnWriteToUsPopupClose)
 btnWriteToUsPopupClose.addEventListener("click", function (event) {
   event.preventDefault();
   writeToUsPopup.classList.add("visually-hidden");
   }
 );
+
 
 document.addEventListener("keyup", function (event) {
   if (event.keyCode == 27){
@@ -34,6 +39,7 @@ document.addEventListener("keyup", function (event) {
   }
 );
 
+if(btnMapPopupClose)
 btnMapPopupClose.addEventListener("click", function (event) {
   event.preventDefault();
   mapPopup.classList.add("visually-hidden");
