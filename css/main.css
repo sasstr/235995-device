@@ -808,7 +808,7 @@ a {
   width: 159px;
 }
 
-.item-link-1 span::before {
+.item-link-1::before {
   position: absolute;
   content: "";
   width: 160px;
@@ -820,12 +820,12 @@ a {
   background-position: center center;
 }
 
-.catalog-item-link span:active,
-.catalog-item-link span:active::before{
+.catalog-item-link > span:active + .catalog-item-linke::before,
+.catalog-item-link:active::before{
   opacity: 0.3;
 }
 
-.item-link-2 span::before {
+.item-link-2::before {
   position: absolute;
   content: "";
   width: 158px;
@@ -837,7 +837,7 @@ a {
   background-position: center 93%;
 }
 
-.item-link-3 span::before {
+.item-link-3::before {
   position: absolute;
   content: "";
   width: 156px;
@@ -849,7 +849,7 @@ a {
   background-position: center center;
 }
 
-.item-link-4 span::before {
+.item-link-4::before {
   position: absolute;
   content: "";
   width: 158px;
@@ -861,7 +861,7 @@ a {
   background-position: center center;
 }
 
-.item-link-5 span::before {
+.item-link-5::before {
   position: absolute;
   content: "";
   width: 158px;
@@ -873,7 +873,7 @@ a {
   background-position: center center;
 }
 
-.item-link-6 span::before {
+.item-link-6::before {
   position: absolute;
   content: "";
   width: 158px;
@@ -1572,32 +1572,39 @@ wrapper-services-column-2 {
 }
 
 .catalog-content-control-btn {
- /* не удачная попытка сделать на CSS
   position: absolute;
-  width: 3px;
-  height: 13px;
+  box-sizing: border-box;
+  width: 5px;
+  height: 2px;
   top: 0;
   left: 0;
   background: #ababab;
-  border: 7px solid #ffffff;
+  border: 9px solid #ffffff;
   border-radius: 50%;
-  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);*/
-  position: absolute;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  z-index: 3;
   cursor: pointer;
+ /* position: absolute;
+  top: 0;
+  left: 0;
   width: 20px;
   height: 23px;
   background-image: url(../img/filter-button.svg);
   background-repeat: no-repeat;
   background-size: 20px 23px;
-  background-color: transparent;
-  border: none;
-  z-index: 3;
+  background-color: transparent;не удачная попытка сделать на CSS
+  border: none;*/
 }
 
-.catalog-content-control-btn:active {  /* */
-  background-size: 23px 25px;
-  width: 23px;
-  height: 25px;
+.catalog-content-control-btn:active {  /*  background-size: 23px 25px; */
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 15px;
+  background: #ababab;
+  border: 7px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px  rgba(0, 1, 1, 0.2);*
 }
 
 .control-btn-max {
@@ -2374,6 +2381,7 @@ wrapper-services-column-2 {
 .pop-up-textarea:focus {
   background-color: #ffffff;
   outline-color: #f0c52e;
+  outline-style: solid;
   outline-width: 3px;
   outline-offset: -3px;
 }
