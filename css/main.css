@@ -786,7 +786,7 @@ a {
 
 .catalog-item {
   width: 160px;
-  height: 160px;
+  height: 240px;
   list-style: none;
   margin-right: 40px;
 }
@@ -1833,28 +1833,29 @@ wrapper-services-column-2 {
   background-repeat: no-repeat;
 }
 
-.catalog-content-filter-form input[type="checkbox"]:checked:active,
-.catalog-filter-box:active {
-  opacity: 1;
-}
 
-.catalog-content-filter-form input[type="checkbox"]:checked:hover,
-.catalog-content-filter-form input[type="checkbox"]:hover,
+.catalog-filter-input:checked:hover,
+.catalog-filter-input:hover,
 .catalog-filter-box:hover,
 .catalog-filter-radio:checked:hover,
 .catalog-filter-radio:hover {
   opacity: 0.6;
 }
 
-.catalog-filter-radio:focus + .catalog-filter-radio::before,
-.catalog-filter-input:focus + .catalog-filter-box::before {
-  outline: 1px solid rgb(160, 248, 248);
+.catalog-filter-input:active + .catalog-filter-box,
+.catalog-filter-radio-button:active + .catalog-filter-radio {
+  opacity: 1;
 }
 
-.catalog-content-filter-form input[type="checkbox"]:checked:disabled,
-.catalog-filter-radio:disabled,
-.catalog-filter-radio:checked:disabled,
-.catalog-content-filter-form input[type="checkbox"]:disabled {
+.catalog-filter-radio-button:focus + .catalog-filter-radio::before,
+.catalog-filter-input:focus + .catalog-filter-box::before {
+  outline: 2px solid rgb(160, 248, 248);
+}
+
+.catalog-filter-input:checked:disabled + .catalog-filter-box,
+.catalog-filter-input:disabled + .catalog-filter-box,
+.catalog-filter-radio-button:disabled + .catalog-filter-radio,
+.catalog-filter-radio-button:checked:disabled+ .catalog-filter-radio {
   opacity: 0.25;
 }
 
@@ -2458,8 +2459,8 @@ wrapper-services-column-2 {
   background-repeat: no-repeat;
 }
 
-.logo-html-academy:focus {
-  outline: 1px solid rgb(160, 248, 248);
+.logo-html-academy:focus::after {
+  outline: 1px solid rgb(86, 180, 180);
 }
 
 .logo-html-academy:hover {
@@ -2662,7 +2663,7 @@ wrapper-services-column-2 {
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
 }
-/*
+
 @keyframes shake {
   0%, 100% { transform: translateX(0); }
   10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
@@ -2673,7 +2674,7 @@ wrapper-services-column-2 {
   animation-name: shake;
   animation-duration: 0.6s;
 }
-*/
+
                         /*  Служебные классы  */
 
 .visually-hidden,

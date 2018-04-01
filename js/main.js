@@ -8,6 +8,53 @@ var mapPopup = document.querySelector('.map-pop-up');
 var btnMapPopupClose = document.querySelector('#map-pop-up-close');
 var openMapPopup = document.querySelector('.shop-data-contacts-map-link');
 
+var  popUpWriteToUsForm= document.querySelector(".write-to-us form"); //link
+var  popUpName= document.querySelector("#pop-up-name");    //login
+var  popUpEmail= document.querySelector("#pop-up-email");   //password
+
+popUpWriteToUsForm.addEventListener("submit", function (evt) {
+  if (!popUpName.value || !popUpEmail.value) {
+  evt.preventDefault();
+  writeToUsPopup.classList.add("modal-error");
+  writeToUsPopup.offsetWidth = writeToUsPopup.offsetWidth;
+}
+  else {
+  if (isStorageSupport) {
+  localStorage.setItem("popUpName", popUpName.value);
+    }
+}
+});
+
+/*
+var isStorageSupport = true;
+var storage = "";
+
+try {
+storage = localStorage.getItem("popUpName");
+    } catch (err) {
+      isStorageSupport = false;
+}
+btnWriteToUs.addEventListener("click", function (evt) {
+     evt.preventDefault();
+     writeToUsPopup.classList.remove("visually-hidden");
+    if (storage) {
+      popUpName.value = storage;
+      popUpEmail.focus();
+    }
+    else {
+      popUpName.focus();
+    }
+});
+
+btnMapPopupClose.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        writeToUsPopup.classList.add("visually-hidden");
+        writeToUsPopup.classList.remove("modal-error");
+});
+
+*/
+//----------------------------------------------------
+
 if(btnWriteToUs)
 btnWriteToUs.addEventListener("click", function (event) {
     event.preventDefault();
@@ -29,6 +76,7 @@ btnWriteToUsPopupClose.addEventListener("click", function (event) {
   event.preventDefault();
   writeToUsPopup.classList.add("visually-hidden");
   writeToUsPopup.classList.remove('modal-show');
+  writeToUsPopup.classList.remove("modal-error");
   }
 );
 
@@ -60,6 +108,27 @@ document.addEventListener("keyup", function (event) {
 );
 
 
+
+/*  Работает но по клику на радио кнопках разваливается ...
+var sliders = document.querySelectorAll( '.slider-item' );
+var radioButtonsSlider = document.querySelectorAll( '.slider input[type="radio"]' );
+
+window.onload  = function() {
+  var len = sliders.length,
+      i = len-1;
+
+  (function go() {
+    sliders[i].classList.add('visually-hidden');
+    radioButtonsSlider[i].checked = false;
+    i = ++i % len;
+
+    sliders[i].classList.remove('visually-hidden');
+    radioButtonsSlider[i].checked = true;
+    if (i > sliders.length ) { i = 0; }
+     window.setTimeout(go, 3000);
+  })();
+}
+*/
 
 
 // Управление слайдерами

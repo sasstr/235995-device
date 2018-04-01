@@ -4,7 +4,7 @@
       <meta charset="utf-8">
       <title>HTML Academy:Каталог Девайс</title>
       <link rel="stylesheet" href="css/normalize.min.css">
-      <link rel="stylesheet" href="css/main.min.css">
+      <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
       <header class="main-header container header-container">
@@ -116,13 +116,11 @@
                           </ul>
                           <ul class="catalog-top-arrows">
                               <li class="catalog-top-sorting-arrows">
-                                  <a class="catalog-top-sorting-arrow-up" href="#">
-                                      <!-- Сюда при стилизации добавим элемент-->
+                                  <a class="catalog-top-sorting-arrow-up" href="#" aria-label="Сортировка товаров от дорогих к дешовым">
                                   </a>
                               </li>
                               <li class="catalog-top-sorting-arrows">
-                                  <a class="catalog-top-sorting-arrow-down">
-                                      <!-- Сюда при стилизации добавим элемент-->
+                                  <a class="catalog-top-sorting-arrow-down" aria-label="Сортировка товаров  от дешовых к дорогим">
                                   </a>
                               </li>
                           </ul>
@@ -172,10 +170,10 @@
 
                                             <h3 class="catalog-filter-headline filter-headline-bluetoth">Bluetooth</h3>
 
-                                            <input class="visually-hidden catalog-filter-radio" type="radio" name="btn-radio" id="btn-radio-yes" checked>
+                                            <input class="visually-hidden catalog-filter-radio-button" type="radio" name="btn-radio" id="btn-radio-yes" checked>
                                             <label class="catalog-filter-radio radio-yes" for="btn-radio-yes">Есть</label>
 
-                                            <input class="visually-hidden catalog-filter-radio" type="radio" name="btn-radio" id="btn-radio-no">
+                                            <input class="visually-hidden catalog-filter-radio-button" type="radio" name="btn-radio" id="btn-radio-no">
                                             <label class="catalog-filter-radio radio-no" for="btn-radio-no">Нет</label>
 
                                             <input class="btn-decor-yellow filter-btn" type="submit" value="Показать">
