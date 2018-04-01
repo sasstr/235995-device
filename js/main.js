@@ -11,8 +11,8 @@ var openMapPopup = document.querySelector('.shop-data-contacts-map-link');
 if(btnWriteToUs)
 btnWriteToUs.addEventListener("click", function (event) {
     event.preventDefault();
-
     writeToUsPopup.classList.remove('visually-hidden');
+    writeToUsPopup.classList.add('modal-show');
     }
   );
 
@@ -20,6 +20,7 @@ if(openMapPopup)
 openMapPopup.addEventListener("click", function (event) {
   event.preventDefault();
   mapPopup.classList.remove('visually-hidden');
+  mapPopup.classList.add('modal-show');
   }
 );
 
@@ -27,6 +28,7 @@ if(btnWriteToUsPopupClose)
 btnWriteToUsPopupClose.addEventListener("click", function (event) {
   event.preventDefault();
   writeToUsPopup.classList.add("visually-hidden");
+  writeToUsPopup.classList.remove('modal-show');
   }
 );
 
@@ -35,6 +37,7 @@ document.addEventListener("keyup", function (event) {
   if (event.keyCode == 27){
   event.preventDefault();
   writeToUsPopup.classList.add("visually-hidden");
+  writeToUsPopup.classList.remove('modal-show');
     }
   }
 );
@@ -43,6 +46,7 @@ if(btnMapPopupClose)
 btnMapPopupClose.addEventListener("click", function (event) {
   event.preventDefault();
   mapPopup.classList.add("visually-hidden");
+  mapPopup.classList.remove('modal-show');
   }
 );
 
@@ -50,6 +54,7 @@ document.addEventListener("keyup", function (event) {
   if (event.keyCode == 27){
   event.preventDefault();
   mapPopup.classList.add("visually-hidden");
+  mapPopup.classList.remove('modal-show');
     }
   }
 );
