@@ -1121,7 +1121,8 @@ wrapper-services-column-2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   list-style: none;
   min-height: 100px;
   width: 100%;
@@ -2640,6 +2641,8 @@ wrapper-services-column-2 {
   background-position: center center;
 }
 
+                      /* Анимация попапов  */
+
 @-webkit-keyframes bounce {
   0% { -webkit-transform: translateY(-2000px); transform: translateY(-2000px); }
   45% { -webkit-transform: translateY(30px); transform: translateY(30px); }
@@ -2662,15 +2665,23 @@ wrapper-services-column-2 {
           animation-duration: 1s;
 }
 
+@-webkit-keyframes shake {
+  0%, 100% { -webkit-transform: translateX(0); transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { -webkit-transform: translateX(-10px); transform: translateX(-10px); }
+  20%, 40%, 60%, 80% { -webkit-transform: translateX(10px); transform: translateX(10px); }
+}
+
 @keyframes shake {
-  0%, 100% { transform: translateX(0); }
-  10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
-  20%, 40%, 60%, 80% { transform: translateX(10px); }
+  0%, 100% { -webkit-transform: translateX(0); transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { -webkit-transform: translateX(-10px); transform: translateX(-10px); }
+  20%, 40%, 60%, 80% { -webkit-transform: translateX(10px); transform: translateX(10px); }
 }
 
 .modal-error {
-  animation-name: shake;
-  animation-duration: 0.6s;
+  -webkit-animation-name: shake;
+          animation-name: shake;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
 }
 
                         /*  Служебные классы  */

@@ -25,35 +25,6 @@ popUpWriteToUsForm.addEventListener("submit", function (evt) {
 }
 });
 
-/*
-var isStorageSupport = true;
-var storage = "";
-
-try {
-storage = localStorage.getItem("popUpName");
-    } catch (err) {
-      isStorageSupport = false;
-}
-btnWriteToUs.addEventListener("click", function (evt) {
-     evt.preventDefault();
-     writeToUsPopup.classList.remove("visually-hidden");
-    if (storage) {
-      popUpName.value = storage;
-      popUpEmail.focus();
-    }
-    else {
-      popUpName.focus();
-    }
-});
-
-btnMapPopupClose.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        writeToUsPopup.classList.add("visually-hidden");
-        writeToUsPopup.classList.remove("modal-error");
-});
-
-*/
-//----------------------------------------------------
 
 if(btnWriteToUs)
 btnWriteToUs.addEventListener("click", function (event) {
@@ -107,6 +78,35 @@ document.addEventListener("keyup", function (event) {
   }
 );
 
+/*
+var isStorageSupport = true;
+var storage = "";
+
+try {
+storage = localStorage.getItem("popUpName");
+    } catch (err) {
+      isStorageSupport = false;
+}
+btnWriteToUs.addEventListener("click", function (evt) {
+     evt.preventDefault();
+     writeToUsPopup.classList.remove("visually-hidden");
+    if (storage) {
+      popUpName.value = storage;
+      popUpEmail.focus();
+    }
+    else {
+      popUpName.focus();
+    }
+});
+
+btnMapPopupClose.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        writeToUsPopup.classList.add("visually-hidden");
+        writeToUsPopup.classList.remove("modal-error");
+});
+
+*/
+//----------------------------------------------------
 
 
 /*  Работает но по клику на радио кнопках разваливается ...
