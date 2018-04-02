@@ -791,7 +791,7 @@ a {
   margin-right: 40px;
 }
 
-.catalog-item:last-child {
+.catalog-item:nth-child(6n) {
   margin-right: 0;
 }
 
